@@ -72,8 +72,12 @@ Atuo criando e evoluindo produtos digitais com foco em:
 ## GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=veruscodes&show_icons=true&theme=transparent&hide_border=true&locale=pt-br" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=veruscodes&layout=compact&theme=transparent&hide_border=true&locale=pt-br" alt="Top languages" />
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=veruscodes&theme=github_dark" alt="Profile details" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=veruscodes&theme=github_dark" alt="Repos per language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=veruscodes&theme=github_dark" alt="Most commit language" />
 </p>
 
 ---
