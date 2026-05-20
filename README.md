@@ -96,6 +96,24 @@ Tenho interesse em oportunidades como:
 
 ---
 
+## Portfolio
+
+<p>
+  Meu portfolio completo com projetos, experiencia, habilidades e formas de contato:
+</p>
+
+<p align="center">
+  <a href="https://veruscodes.github.io/windsonms/" target="_blank">
+    <img src="https://image.thum.io/get/width/1200/noanimate/https://veruscodes.github.io/windsonms/" alt="Preview do portfolio VerusCode" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://veruscodes.github.io/windsonms/" target="_blank">Abrir portfolio online</a>
+</p>
+
+---
+
 ## GitHub Stats
 
 <p align="center">
