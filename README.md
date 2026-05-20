@@ -62,7 +62,7 @@ Atuo criando e evoluindo produtos digitais com foco em:
 - Sistemas internos para empresas
 - Modernizacao de sistemas legados
 - Arquiteturas simples, praticas e sustentaveis
-- Backend e integrações que destravam operacao e crescimento
+- Backend e integracoes que destravam operacao e crescimento
 
 ---
 
@@ -100,6 +100,10 @@ Tenho interesse em oportunidades como:
 
 <p align="center">
   <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=veruscodes&theme=github_dark" alt="Profile details" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=veruscodes&theme=github_dark" alt="GitHub activity stats" />
 </p>
 
 <p align="center">
