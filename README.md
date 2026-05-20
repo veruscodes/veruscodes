@@ -1,7 +1,7 @@
 <h1 align="center">Ola, eu sou VerusCode</h1>
 
 <p align="center">
-  Full Stack Developer focado em SaaS, sistemas hospitalares, automacoes e IA aplicada
+  Full Stack Developer focado em produtos digitais, SaaS, backend, automacoes e IA aplicada
 </p>
 
 <p align="center">
@@ -18,12 +18,12 @@
 
 ## Sobre mim
 
-Sou desenvolvedor Full Stack com foco em construir sistemas que resolvem problemas reais. Trabalho com backend robusto, interfaces web, bancos de dados, integracoes, automacao de processos e recursos de inteligencia artificial aplicados ao dia a dia das operacoes.
+Sou desenvolvedor Full Stack com foco em construir produtos digitais que resolvem problemas reais. Trabalho com backend robusto, interfaces web, bancos de dados, integracoes, automacao de processos e recursos de inteligencia artificial aplicados a operacao, produtividade e crescimento de negocio.
 
 Minha experiencia passa por:
 
 - Plataformas SaaS
-- Sistemas hospitalares e administrativos
+- Sistemas web e administrativos
 - APIs, dashboards e automacoes
 - Estruturacao e manutencao de sistemas em producao
 - Performance, organizacao e escalabilidade
@@ -40,7 +40,7 @@ Minha experiencia passa por:
 
 ## O que eu entrego
 
-- Backends bem estruturados com PHP, Laravel e CodeIgniter
+- Backends bem estruturados com PHP, Laravel e Go
 - Sistemas web com foco em regra de negocio, seguranca e clareza
 - APIs e integracoes entre sistemas
 - Automatizacao de fluxos internos e tarefas operacionais
@@ -54,7 +54,7 @@ Minha experiencia passa por:
 Atuo criando e evoluindo produtos digitais com foco em:
 
 - SaaS de verdade, com visao de produto e operacao
-- Sistemas internos para empresas e clinicas
+- Sistemas internos para empresas
 - Modernizacao de sistemas legados
 - Arquiteturas simples, praticas e sustentaveis
 
@@ -63,9 +63,21 @@ Atuo criando e evoluindo produtos digitais com foco em:
 ## Alguns destaques do perfil
 
 - Experiencia com sistemas reais em producao
-- Forte atuacao em CRUDs complexos, permissoes, relatorios e faturamento
+- Forte atuacao em CRUDs complexos, permissoes, relatorios, faturamento e fluxos operacionais
 - Boa base de banco de dados e modelagem para aplicacoes de negocio
 - Perfil pratico: gosto de tirar a ideia do papel e colocar para rodar
+
+---
+
+## Aberto a oportunidades
+
+Tenho interesse em oportunidades como:
+
+- Desenvolvedor Full Stack
+- Backend Developer
+- Desenvolvedor PHP Laravel
+- Projetos SaaS e automacao de processos
+- Times que precisem de alguem com perfil de entrega, organizacao e visao de produto
 
 ---
 
