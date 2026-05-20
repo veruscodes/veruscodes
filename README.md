@@ -1,7 +1,11 @@
 <h1 align="center">Ola, eu sou VerusCode</h1>
 
 <p align="center">
-  Full Stack Developer focado em produtos digitais, SaaS, backend, automacoes e IA aplicada
+  Full Stack Developer focado em backend, produtos digitais, SaaS, automacoes e IA aplicada
+</p>
+
+<p align="center">
+  Construindo solucoes web com foco em performance, clareza de negocio e entrega real
 </p>
 
 <p align="center">
@@ -18,7 +22,7 @@
 
 ## Sobre mim
 
-Sou desenvolvedor Full Stack com foco em construir produtos digitais que resolvem problemas reais. Trabalho com backend robusto, interfaces web, bancos de dados, integracoes, automacao de processos e recursos de inteligencia artificial aplicados a operacao, produtividade e crescimento de negocio.
+Sou desenvolvedor Full Stack em evolucao constante, com foco em construir produtos digitais que resolvem problemas reais. Atuo no desenvolvimento de sistemas web, APIs, automacoes, bancos de dados e integracoes, sempre buscando codigo organizado, boa experiencia de uso e impacto no negocio.
 
 Minha experiencia passa por:
 
@@ -33,7 +37,7 @@ Minha experiencia passa por:
 ## Stack principal
 
 <p>
-  <img src="https://skillicons.dev/icons?i=php,laravel,go,js,react,docker,postgres,mysql,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,express,js,react,go,docker,postgres,mysql,git,github,vscode" />
 </p>
 
 ---
@@ -41,6 +45,7 @@ Minha experiencia passa por:
 ## O que eu entrego
 
 - Backends bem estruturados com PHP, Laravel e Go
+- Aplicacoes web com JavaScript, React e integracoes modernas
 - Sistemas web com foco em regra de negocio, seguranca e clareza
 - APIs e integracoes entre sistemas
 - Automatizacao de fluxos internos e tarefas operacionais
@@ -57,6 +62,7 @@ Atuo criando e evoluindo produtos digitais com foco em:
 - Sistemas internos para empresas
 - Modernizacao de sistemas legados
 - Arquiteturas simples, praticas e sustentaveis
+- Backend e integrações que destravam operacao e crescimento
 
 ---
 
@@ -76,8 +82,17 @@ Tenho interesse em oportunidades como:
 - Desenvolvedor Full Stack
 - Backend Developer
 - Desenvolvedor PHP Laravel
-- Projetos SaaS e automacao de processos
+- Desenvolvedor Node.js e integracoes web
+- Projetos SaaS, produtos internos e automacao de processos
 - Times que precisem de alguem com perfil de entrega, organizacao e visao de produto
+
+---
+
+## Atualmente
+
+- Evoluindo em desenvolvimento Full Stack e engenharia de software
+- Aprofundando conhecimentos em backend, banco de dados e arquitetura de sistemas
+- Construindo projetos com foco em aplicacao real, aprendizado continuo e crescimento profissional
 
 ---
 
