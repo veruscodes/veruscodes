@@ -39,8 +39,11 @@ Minha experiencia passa por:
 <p>
   <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,express,js,react,go,docker,postgres,mysql,git,github,vscode" />
 </p>
+<p>
+  <img src="https://img.shields.io/badge/BI-Business%20Intelligence-0e75b6?style=for-the-badge" alt="Business Intelligence" />
+  <img src="https://img.shields.io/badge/TARGIT-InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=for-the-badge" alt="TARGIT InMemory ETL Scheduler" />
+</p>
 
----
 
 ## O que eu entrego
 
