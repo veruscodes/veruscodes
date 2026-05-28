@@ -1,11 +1,11 @@
-<h1 align="center">Ola, eu sou Windson Martins</h1>
+<h1 align="center">Olá, eu sou Windson Martins</h1>
 
 <p align="center">
-  Full Stack Developer focado em backend, produtos digitais, SaaS, automacoes e IA aplicada
+  Full Stack Developer focado em Frontend e Backend, produtos digitais, SaaS, automações e IA aplicada
 </p>
 
 <p align="center">
-  Construindo solucoes web com foco em performance, clareza de negocio e entrega real
+  Construindo soluções web com foco em performance, clareza de negócio e entrega real
 </p>
 
 <p align="center">
@@ -22,15 +22,15 @@
 
 ## Sobre mim
 
-Sou desenvolvedor Full Stack em evolucao constante, com foco em construir produtos digitais que resolvem problemas reais. Atuo no desenvolvimento de sistemas web, APIs, automacoes, bancos de dados e integracoes, sempre buscando codigo organizado, boa experiencia de uso e impacto no negocio.
+Sou desenvolvedor Full Stack em evolução constante, com foco em construir produtos digitais que resolvem problemas reais. Atuo no desenvolvimento de sistemas web, APIs, automações, bancos de dados e integrações, sempre buscando código organizado, boa experiência de uso e impacto no negócio.
 
-Minha experiencia passa por:
+Minha experiência passa por:
 
 - Plataformas SaaS
 - Sistemas web e administrativos
-- APIs, dashboards e automacoes
-- Estruturacao e manutencao de sistemas em producao
-- Performance, organizacao e escalabilidade
+- APIs, dashboards e automações
+- Estruturação e manutenção de sistemas em produção
+- Performance, organização e escalabilidade
 
 ---
 
@@ -48,12 +48,12 @@ Minha experiencia passa por:
 ## O que eu entrego
 
 - Backends bem estruturados com PHP, Laravel e Go
-- Aplicacoes web com JavaScript, React e integracoes modernas
-- Sistemas web com foco em regra de negocio, seguranca e clareza
-- APIs e integracoes entre sistemas
-- Automatizacao de fluxos internos e tarefas operacionais
-- Dashboards e modulos administrativos para tomada de decisao
-- Solucoes com IA para ganho de produtividade e inteligencia de processo
+- Aplicações web com JavaScript, React e integrações modernas
+- Sistemas web com foco em regra de negócio, segurança e clareza
+- APIs e integrações entre sistemas
+- Automatização de fluxos internos e tarefas operacionais
+- Dashboards e módulos administrativos para tomada de decisão
+- Soluções com IA para ganho de produtividade e inteligência de processo
 
 ---
 
@@ -61,20 +61,20 @@ Minha experiencia passa por:
 
 Atuo criando e evoluindo produtos digitais com foco em:
 
-- SaaS de verdade, com visao de produto e operacao
+- SaaS de verdade, com visão de produto e operação
 - Sistemas internos para empresas
-- Modernizacao de sistemas legados
-- Arquiteturas simples, praticas e sustentaveis
-- Backend e integracoes que destravam operacao e crescimento
+- Modernização de sistemas legados
+- Arquiteturas simples, práticas e sustentáveis
+- Backend e integrações que destravam operação e crescimento
 
 ---
 
 ## Alguns destaques do perfil
 
-- Experiencia com sistemas reais em producao
-- Forte atuacao em CRUDs complexos, permissoes, relatorios, faturamento e fluxos operacionais
-- Boa base de banco de dados e modelagem para aplicacoes de negocio
-- Perfil pratico: gosto de tirar a ideia do papel e colocar para rodar
+- Experiência com sistemas reais em produção
+- Forte atuação em CRUDs complexos, permissões, relatórios, faturamento e fluxos operacionais
+- Boa base de banco de dados e modelagem para aplicações de negócio
+- Perfil prático: gosto de tirar a ideia do papel e colocar para rodar
 
 ---
 
@@ -85,9 +85,9 @@ Tenho interesse em oportunidades como:
 - Desenvolvedor Full Stack
 - Backend Developer
 - Desenvolvedor PHP Laravel
-- Desenvolvedor Node.js e integracoes web
-- Projetos SaaS, produtos internos e automacao de processos
-- Times que precisem de alguem com perfil de entrega, organizacao e visao de produto
+- Desenvolvedor Node.js e integrações web
+- Projetos SaaS, produtos internos e automação de processos
+- Times que precisem de alguém com perfil de entrega, organização e visão de produto
 
 ---
 
@@ -95,24 +95,24 @@ Tenho interesse em oportunidades como:
 
 - Evoluindo em desenvolvimento Full Stack e engenharia de software
 - Aprofundando conhecimentos em backend, banco de dados e arquitetura de sistemas
-- Construindo projetos com foco em aplicacao real, aprendizado continuo e crescimento profissional
+- Construindo projetos com foco em aplicação real, aprendizado contínuo e crescimento profissional
 
 ---
 
-## Portfolio
+## Portfólio
 
 <p>
-  Meu portfolio completo com projetos, experiencia, habilidades e formas de contato:
+  Meu portfólio completo com projetos, experiência, habilidades e formas de contato:
 </p>
 
 <p align="center">
   <a href="https://veruscodes.github.io/windsonms/" target="_blank">
-    <img src="https://image.thum.io/get/width/1200/noanimate/https://veruscodes.github.io/windsonms/" alt="Preview do portfolio VerusCode" />
+    <img src="https://image.thum.io/get/width/1200/noanimate/https://veruscodes.github.io/windsonms/" alt="Preview do portfólio VerusCode" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://veruscodes.github.io/windsonms/" target="_blank">Abrir portfolio online</a>
+  <a href="https://veruscodes.github.io/windsonms/" target="_blank">Abrir portfólio online</a>
 </p>
 
 ---
@@ -138,10 +138,10 @@ Tenho interesse em oportunidades como:
 
 - Email: `codeverus@gmail.com`
 - GitHub: `github.com/veruscodes`
-- Localizacao: Vitoria da Conquista - BA
+- Localização: Vitória da Conquista - BA
 
 ---
 
 <p align="center">
-  Transformando necessidade real em software util, organizado e escalavel.
+  Transformando necessidade real em software útil, organizado e escalável.
 </p>
