@@ -146,3 +146,4 @@ Tenho interesse em oportunidades como:
   Transformando necessidade real em software útil, organizado e escalável.
 </p>
 <!-- perfil atualizado em 2026 -->
+<!-- perfil revisado -->
