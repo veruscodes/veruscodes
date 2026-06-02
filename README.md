@@ -37,13 +37,12 @@ Minha experiência passa por:
 ## Stack principal
 
 <p>
-  <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,express,js,react,go,docker,postgres,mysql,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,express,js,react,go,docker,postgres,mysql,git,github,vscode" alt="Stack principal" />
 </p>
 <p>
   <img src="https://img.shields.io/badge/BI-Business%20Intelligence-0e75b6?style=for-the-badge" alt="Business Intelligence" />
   <img src="https://img.shields.io/badge/TARGIT-InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=for-the-badge" alt="TARGIT InMemory ETL Scheduler" />
 </p>
-
 
 ## O que eu entrego
 
@@ -120,16 +119,12 @@ Tenho interesse em oportunidades como:
 ## GitHub Stats
 
 <p align="center">
-  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=veruscodes&theme=github_dark" alt="Profile details" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=veruscodes&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=veruscodes&layout=compact&theme=github_dark&hide_border=true" alt="Top languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=veruscodes&theme=github_dark" alt="GitHub activity stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=veruscodes&theme=github_dark" alt="Repos per language" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=veruscodes&theme=github_dark" alt="Most commit language" />
+  <img width="100%" src="https://streak-stats.demolab.com?user=veruscodes&theme=github-dark&hide_border=true" alt="GitHub streak" />
 </p>
 
 ---
