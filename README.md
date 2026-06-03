@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mhardik003/mhardik003/main/gifs/mario.gif" alt="Mario pixel art" width="220" />
+  <img src="https://raw.githubusercontent.com/mhardik003/mhardik003/main/gifs/mario.gif" alt="Mario pixel art" width="280" />
 </p>
 
 ---
@@ -132,12 +132,28 @@ Tenho interesse em oportunidades como:
 </p>
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=veruscodes&show_icons=true&theme=github_dark&locale=pt-br&hide_border=true&include_all_commits=true&count_private=true" alt="Estatísticas gerais do GitHub" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=veruscodes&layout=compact&theme=github_dark&locale=pt-br&hide_border=true" alt="Linguagens mais usadas" />
+  <a href="https://github.com/veruscodes?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositórios-Projetos%20publicados-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repositórios publicados" />
+  </a>
+  <a href="https://github.com/veruscodes?tab=stars">
+    <img src="https://img.shields.io/badge/Estrelas-Reconhecimento%20dos%20projetos-f59e0b?style=for-the-badge&logo=github&logoColor=white" alt="Estrelas dos projetos" />
+  </a>
+  <a href="https://github.com/veruscodes">
+    <img src="https://img.shields.io/badge/Atividade-Consistência%20e%20evolução-0e75b6?style=for-the-badge&logo=githubactions&logoColor=white" alt="Atividade e consistência" />
+  </a>
 </p>
 
 <p align="center">
-  <img width="100%" src="https://streak-stats.demolab.com?user=veruscodes&theme=github-dark&hide_border=true&locale=pt_BR" alt="Sequência de contribuições no GitHub" />
+  <a href="https://github.com/veruscodes?tab=repositories&q=&type=source&language=&sort=stargazers">
+    <img src="https://img.shields.io/badge/Projetos%20em%20destaque-Ver%20repositorios%20mais%20relevantes-111827?style=for-the-badge&logo=github&logoColor=white" alt="Projetos em destaque" />
+  </a>
+  <a href="https://github.com/veruscodes?tab=overview&from=2026-06-01&to=2026-06-30">
+    <img src="https://img.shields.io/badge/Histórico-Acompanhar%20contribuições-2563eb?style=for-the-badge&logo=git&logoColor=white" alt="Histórico de contribuições" />
+  </a>
+</p>
+
+<p align="center">
+  Mais do que números isolados, meu perfil mostra constância de entrega, construção de soluções reais e evolução técnica contínua. Se quiser, você pode explorar os repositórios para ver código, organização, histórico de commits e projetos que já receberam atenção da comunidade.
 </p>
 
 ---
