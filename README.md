@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mhardik003/mhardik003/main/gifs/mario.gif" alt="Mario pixel art" width="280" />
+  <img src="https://raw.githubusercontent.com/mhardik003/mhardik003/main/gifs/mario.gif" alt="Mario pixel art" width="420" />
 </p>
 
 ---
@@ -41,12 +41,15 @@ Minha experiência passa por:
 ## Stack principal
 
 <p>
-  <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,express,js,react,go,docker,postgres,mysql,git,github,vscode" alt="Stack principal" />
+  <img src="https://skillicons.dev/icons?i=html,css,php,laravel,wordpress,vue,python,bootstrap,figma,gitlab,blender,mysql,postgres,docker,git,vscode" alt="Stack principal" />
 </p>
 
 <p>
   <img src="https://img.shields.io/badge/BI-Business%20Intelligence-0e75b6?style=for-the-badge" alt="Business Intelligence" />
   <img src="https://img.shields.io/badge/TARGIT-InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=for-the-badge" alt="TARGIT InMemory ETL Scheduler" />
+  <img src="https://img.shields.io/badge/WooCommerce-Loja%20virtual%20e%20plugins-7f54b3?style=for-the-badge&logo=woocommerce&logoColor=white" alt="WooCommerce" />
+  <img src="https://img.shields.io/badge/CodeIgniter-PHP%20framework-dd4814?style=for-the-badge" alt="CodeIgniter" />
+  <img src="https://img.shields.io/badge/After%20Effects-Motion%20e%20edicao-9999ff?style=for-the-badge&logo=adobeaftereffects&logoColor=white" alt="After Effects" />
 </p>
 
 ## O que eu entrego
