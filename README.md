@@ -15,7 +15,11 @@
   <a href="mailto:codeverus@gmail.com">
     <img src="https://img.shields.io/badge/Email-codeverus%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=veruscodes&style=for-the-badge&color=0e75b6" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=veruscodes&style=for-the-badge&color=0e75b6" alt="Visualizações do perfil" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mhardik003/mhardik003/main/gifs/mario.gif" alt="Mario pixel art" width="220" />
 </p>
 
 ---
@@ -39,6 +43,7 @@ Minha experiência passa por:
 <p>
   <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,express,js,react,go,docker,postgres,mysql,git,github,vscode" alt="Stack principal" />
 </p>
+
 <p>
   <img src="https://img.shields.io/badge/BI-Business%20Intelligence-0e75b6?style=for-the-badge" alt="Business Intelligence" />
   <img src="https://img.shields.io/badge/TARGIT-InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=for-the-badge" alt="TARGIT InMemory ETL Scheduler" />
@@ -119,11 +124,20 @@ Tenho interesse em oportunidades como:
 ## GitHub Stats
 
 <p align="center">
-  Consistência, evolução diária e projetos aplicados ao mundo real.
+  Um panorama mais completo da minha jornada no GitHub: consistência nas contribuições, repositórios que acumulam estrelas, código entregue com frequência e uma base técnica que segue evoluindo projeto após projeto.
 </p>
 
 <p align="center">
-  <img width="100%" src="https://streak-stats.demolab.com?user=veruscodes&theme=github-dark&hide_border=true" alt="GitHub streak" />
+  Aqui você encontra uma leitura rápida do meu ritmo de desenvolvimento, das linguagens que mais uso e do histórico de atividade que sustenta meu trabalho no dia a dia.
+</p>
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=veruscodes&show_icons=true&theme=github_dark&locale=pt-br&hide_border=true&include_all_commits=true&count_private=true" alt="Estatísticas gerais do GitHub" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=veruscodes&layout=compact&theme=github_dark&locale=pt-br&hide_border=true" alt="Linguagens mais usadas" />
+</p>
+
+<p align="center">
+  <img width="100%" src="https://streak-stats.demolab.com?user=veruscodes&theme=github-dark&hide_border=true&locale=pt_BR" alt="Sequência de contribuições no GitHub" />
 </p>
 
 ---
@@ -139,5 +153,3 @@ Tenho interesse em oportunidades como:
 <p align="center">
   Transformando necessidade real em software útil, organizado e escalável.
 </p>
-<!-- perfil atualizado em 2026 -->
-<!-- perfil revisado -->
