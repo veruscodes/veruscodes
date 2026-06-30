@@ -168,7 +168,7 @@ Tenho experiência prática com plataformas SaaS, sistemas administrativos, dash
 ![Automação](https://img.shields.io/badge/Automação%20de%20processos-0e75b6?style=flat-square)
 
 Times que precisem de alguém com perfil de entrega, organização e visão de produto.
-> ⚠️ **Nota:** Os arquivos HTML contidos neste repositório servem apenas para fins de demonstração e visualização estática do layout. Eles não representam a arquitetura, o código real ou o escopo completo do projeto final.
+> ⚠️ **Nota:** Os arquivos HTML contidos nestes repositórios servem apenas para fins de demonstração e visualização estática do layout. Eles não representam a arquitetura, o código real ou o escopo completo do projeto final.
 
 ---
 
