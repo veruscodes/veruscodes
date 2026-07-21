@@ -2,7 +2,7 @@
 
 <p align="center">
   Full Stack Developer — PHP · Laravel · JavaScript · Vue.js<br />
-  Vitória da Conquista, BA · aberto a oportunidades remotas
+  Vitória da Conquista, BA · aberto a oportunidades remotas, híbridas ou presenciais
 </p>
 
 <p align="center">
