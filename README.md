@@ -22,17 +22,13 @@
   <img src="https://raw.githubusercontent.com/mhardik003/mhardik003/main/gifs/mario.gif" alt="Mario pixel art" width="420" />
 </p>
 
----
-
-## Sobre mim
+Sobre mim
 
 Desenvolvedor Full Stack com foco em construir produtos digitais que resolvem problemas reais. Atuo no desenvolvimento de sistemas web, APIs, automações e integrações — sempre com atenção a código organizado, boa experiência de uso e impacto direto no negócio.
 
 Tenho experiência prática com plataformas SaaS, sistemas administrativos, dashboards, faturamento, permissões e modernização de sistemas legados. Perfil prático: gosto de tirar a ideia do papel e colocar para rodar.
 
----
-
-## Stack principal
+Stack principal
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="42" alt="HTML5" title="HTML5" />
@@ -66,21 +62,14 @@ Tenho experiência prática com plataformas SaaS, sistemas administrativos, dash
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="42" alt="Git" title="Git" />
   <img width="10" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="42" alt="GitLab" title="GitLab" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="42" alt="Figma" title="Figma" />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" height="42" alt="Blender" title="Blender" />
 </div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/BI-Business%20Intelligence-0e75b6?style=flat-square" />
   <img src="https://img.shields.io/badge/TARGIT-InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=flat-square" />
-  <img src="https://img.shields.io/badge/After%20Effects-Motion%20e%20edição-9999ff?style=flat-square&logo=adobeaftereffects&logoColor=white" />
 </p>
 
----
-
-## O que eu entrego
+O que eu entrego
 
 <div align="center">
 <table>
@@ -121,21 +110,16 @@ Tenho experiência prática com plataformas SaaS, sistemas administrativos, dash
 </table>
 </div>
 
----
+Foco profissional
 
-## Foco atual
+✦ Desenvolvimento Full Stack com maior atuação em back-end
+✦ Sistemas críticos, hospitalares e administrativos
+✦ APIs, integrações e automação de processos
+✦ Sustentação e modernização de sistemas legados
+✦ Bancos de dados, performance e regras de negócio complexas
+✦ Plataformas SaaS, e-commerce e produtos digitais
 
-```
-✦ SaaS de verdade, com visão de produto e operação real
-✦ Sistemas internos para empresas
-✦ Modernização de sistemas legados
-✦ Arquiteturas simples, práticas e sustentáveis
-✦ Backend e integrações que destravam operação e crescimento
-```
-
----
-
-## GitHub Stats
+GitHub Stats
 
 <div align="center">
 
@@ -156,30 +140,23 @@ Tenho experiência prática com plataformas SaaS, sistemas administrativos, dash
 
 </div>
 
----
+Aberto a oportunidades
 
-## Aberto a oportunidades
 
-![Full Stack](https://img.shields.io/badge/Full%20Stack%20Developer-0e75b6?style=flat-square)
-![Backend](https://img.shields.io/badge/Backend%20Developer-0e75b6?style=flat-square)
-![PHP Laravel](https://img.shields.io/badge/PHP%20%C2%B7%20Laravel-0e75b6?style=flat-square)
-![Node.js](https://img.shields.io/badge/Node.js%20%C2%B7%20Integrações-0e75b6?style=flat-square)
-![SaaS](https://img.shields.io/badge/Projetos%20SaaS-0e75b6?style=flat-square)
-![Automação](https://img.shields.io/badge/Automação%20de%20processos-0e75b6?style=flat-square)
 
 Times que precisem de alguém com perfil de entrega, organização e visão de produto.
-> ⚠️ **Nota:** Os arquivos HTML contidos nestes repositórios servem apenas para fins de demonstração e visualização estática do layout. Eles não representam a arquitetura, o código real ou o escopo completo do projeto final.
 
----
+⚠️ Nota: Os arquivos HTML contidos nestes repositórios servem apenas para fins de demonstração e visualização estática do layout. Eles não representam a arquitetura, o código real ou o escopo completo do projeto final.
 
-## Contato
+Contato
 
-- 📧 Email: `codeverus@gmail.com`
-- 🐙 GitHub: [github.com/veruscodes](https://github.com/veruscodes)
-- 🌐 Portfolio: [veruscodes.github.io/windsonms](https://veruscodes.github.io/windsonms/)
-- 📍 Vitória da Conquista, BA
+📧 Email: codeverus@gmail.com
 
----
+🐙 GitHub: github.com/veruscodes
+
+🌐 Portfolio: veruscodes.github.io/windsonms
+
+📍 Vitória da Conquista, BA
 
 <p align="center">
   <i>Transformando necessidade real em software útil, organizado e escalável.</i>
