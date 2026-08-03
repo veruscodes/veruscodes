@@ -24,9 +24,11 @@
 
 Sobre mim
 
-Desenvolvedor Full Stack com foco em construir produtos digitais que resolvem problemas reais. Atuo no desenvolvimento de sistemas web, APIs, automações e integrações — sempre com atenção a código organizado, boa experiência de uso e impacto direto no negócio.
+Desenvolvedor Full Stack com maior atuação em back-end, focado na construção e sustentação de sistemas que resolvem problemas reais de negócio. Atuo no desenvolvimento de aplicações web, APIs, automações e integrações, com atenção à organização do código, performance, segurança e confiabilidade.
 
-Tenho experiência prática com plataformas SaaS, sistemas administrativos, dashboards, faturamento, permissões e modernização de sistemas legados. Perfil prático: gosto de tirar a ideia do papel e colocar para rodar.
+Tenho experiência com sistemas críticos de operação 24/7, especialmente em ambientes hospitalares e administrativos, além de plataformas SaaS, dashboards, faturamento, controle de permissões e modernização de sistemas legados.
+
+Possuo perfil prático e orientado à entrega: transformo necessidades complexas em soluções funcionais, estáveis, escaláveis e preparadas para o uso contínuo.
 
 Stack principal
 
