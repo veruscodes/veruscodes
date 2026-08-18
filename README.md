@@ -1,7 +1,7 @@
 <h1 align="center">Windson Martins</h1>
 
 <p align="center">
-  Full Stack Developer — PHP · Laravel · JavaScript · Vue.js<br />
+  Full Stack Developer — PHP · Laravel · JavaScript · React.js<br />
   Vitória da Conquista, BA · aberto a oportunidades remotas, híbridas ou presenciais
 </p>
 
