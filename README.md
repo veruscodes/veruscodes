@@ -82,11 +82,7 @@ Transformo requisitos complexos de negócio em software com arquitetura clara, f
 <div align="center">
 
 <a href="https://github.com/veruscodes">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=veruscodes&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="Estatísticas do GitHub">
-</a>
-
-<a href="https://github.com/veruscodes">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=veruscodes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Linguagens mais usadas">
+  <img src="assets/stats/overview.svg" alt="Visão geral do perfil" width="100%">
 </a>
 
 </div>
@@ -96,7 +92,7 @@ Transformo requisitos complexos de negócio em software com arquitetura clara, f
 <div align="center">
 
 <a href="https://github.com/veruscodes">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=veruscodes&theme=tokyonight&hide_border=true" alt="Sequência de commits" width="70%">
+  <img src="assets/stats/streak.svg" alt="Sequência de commits" width="100%">
 </a>
 
 </div>
@@ -106,30 +102,22 @@ Transformo requisitos complexos de negócio em software com arquitetura clara, f
 <div align="center">
 
 <a href="https://github.com/veruscodes">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=veruscodes&theme=tokyonight&hide_border=true&color=58a6ff" alt="Gráfico de atividade" width="95%">
-</a>
-
-<br>
-
-<a href="https://github.com/veruscodes">
-  <img src="https://ghchart.rshah.org/veruscodes" alt="GitHub Contribution Graph" width="95%">
+  <img src="assets/stats/top-langs.svg" alt="Linguagens mais usadas" width="100%">
 </a>
 
 </div>
 
----
-
-## 🏆 Conquistas & Troféus
+<br>
 
 <div align="center">
 
 <a href="https://github.com/veruscodes">
-  <img src="https://github-profile-trophy.vercel.app/?username=veruscodes&theme=tokyonight&no-frame=true&no-bg=false&column=7" alt="Troféus do GitHub">
+  <img src="assets/stats/calendar.svg" alt="Calendário de contribuições" width="100%">
 </a>
 
 </div>
 
----
+> Estatísticas geradas automaticamente via GitHub Actions. Atualizadas a cada 6 horas.
 
 ## 🧠 Mentalidade de Engenharia
 
