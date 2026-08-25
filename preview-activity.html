@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preview - Commit Activity</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #010409; padding: 40px; font-family: 'Segoe UI', Arial, sans-serif; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h2 { color: #f0f6fc; margin-bottom: 6px; font-size: 20px; }
+    .subtitle { color: #8b949e; margin-bottom: 24px; font-size: 13px; }
+    .chart-wrapper { position: relative; background: #0d1117; border-radius: 12px; border: 1px solid #21262d; overflow: hidden; }
+    svg { display: block; width: 100%; height: auto; }
+
+    /* Tooltip custom */
+    #tooltip {
+      position: absolute;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+      background: #1c2333;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 13px;
+      color: #c9d1d9;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      z-index: 100;
+      white-space: nowrap;
+    }
+    #tooltip .tt-date { color: #8b949e; font-size: 11px; margin-bottom: 4px; }
+    #tooltip .tt-value { color: #f0f6fc; font-size: 16px; font-weight: 700; }
+    #tooltip .tt-value span { color: #58a6ff; }
+
+    /* Hover line */
+    #hoverLine {
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: rgba(88,166,255,0.3);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+    }
+
+    /* Data point hover */
+    .data-point { cursor: pointer; transition: r 0.15s ease, fill-opacity 0.15s ease; }
+    .data-point:hover { r: 7; fill-opacity: 1; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Preview - Commit Activity</h2>
+    <p class="subtitle">Background: #0d1117 | Últimos 30 dias | Atividade diária | Passe o mouse sobre os pontos</p>
+
+    <div class="chart-wrapper" id="chartWrapper">
+      <div id="hoverLine"></div>
+      <div id="tooltip">
+        <div class="tt-date"></div>
+        <div class="tt-value"></div>
+      </div>
+
+      <svg id="chart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" role="img" aria-label="GitHub Commit Activity Chart">
+        <defs>
+          <linearGradient id="apexBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0d1117"/>
+            <stop offset="100%" stop-color="#0d1117"/>
+          </linearGradient>
+          <linearGradient id="apexLine" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#008FFB"/>
+            <stop offset="60%" stop-color="#00E396"/>
+            <stop offset="100%" stop-color="#775DD0"/>
+          </linearGradient>
+          <linearGradient id="apexArea" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#008FFB" stop-opacity="0.20"/>
+            <stop offset="100%" stop-color="#008FFB" stop-opacity="0.0"/>
+          </linearGradient>
+        </defs>
+
+        <rect width="1200" height="360" rx="12" fill="url(#apexBg)"/>
+        <rect width="1198" height="358" x="1" y="1" rx="11" fill="none" stroke="#21262d" stroke-width="1"/>
+
+        <!-- Header -->
+        <g transform="translate(40, 38)">
+          <text x="0" y="0" fill="#F1F5F9" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700">Commit Activity</text>
+          <text x="0" y="20" fill="#6C7A9C" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Daily commit activity over the last 30 days</text>
+        </g>
+
+        <!-- Legend -->
+        <g transform="translate(1160, 38)">
+          <g transform="translate(-260, -2)">
+            <circle cx="0" cy="0" r="4" fill="#008FFB"/>
+            <text x="12" y="4" fill="#94A3B8" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Total: <tspan fill="#F1F5F9" font-weight="700">349</tspan></text>
+          </g>
+          <g transform="translate(-140, -2)">
+            <circle cx="0" cy="0" r="4" fill="#00E396"/>
+            <text x="12" y="4" fill="#94A3B8" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Avg: <tspan fill="#F1F5F9" font-weight="700">11.6</tspan>/day</text>
+          </g>
+        </g>
+
+        <!-- Grid -->
+        <g id="grid"></g>
+
+        <!-- Area + Line -->
+        <path id="areaPath" fill="url(#apexArea)"/>
+        <path id="linePath" fill="none" stroke="url(#apexLine)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Data points (added by JS) -->
+        <g id="points"></g>
+
+        <!-- X axis -->
+        <g id="xAxis"></g>
+      </svg>
+    </div>
+  </div>
+
+  <script>
+    const rawData = [
+      { date: '2026-07-26', count: 4 },
+      { date: '2026-07-27', count: 6 },
+      { date: '2026-07-28', count: 3 },
+      { date: '2026-07-29', count: 0 },
+      { date: '2026-07-30', count: 9 },
+      { date: '2026-07-31', count: 16 },
+      { date: '2026-08-01', count: 0 },
+      { date: '2026-08-02', count: 0 },
+      { date: '2026-08-03', count: 4 },
+      { date: '2026-08-04', count: 1 },
+      { date: '2026-08-05', count: 18 },
+      { date: '2026-08-06', count: 11 },
+      { date: '2026-08-07', count: 13 },
+      { date: '2026-08-08', count: 2 },
+      { date: '2026-08-09', count: 0 },
+      { date: '2026-08-10', count: 0 },
+      { date: '2026-08-11', count: 5 },
+      { date: '2026-08-12', count: 4 },
+      { date: '2026-08-13', count: 16 },
+      { date: '2026-08-14', count: 7 },
+      { date: '2026-08-15', count: 0 },
+      { date: '2026-08-16', count: 0 },
+      { date: '2026-08-17', count: 6 },
+      { date: '2026-08-18', count: 6 },
+      { date: '2026-08-19', count: 28 },
+      { date: '2026-08-20', count: 9 },
+      { date: '2026-08-21', count: 12 },
+      { date: '2026-08-22', count: 0 },
+      { date: '2026-08-23', count: 0 },
+      { date: '2026-08-24', count: 1 },
+      { date: '2026-08-25', count: 37 }
+    ];
+
+    const pad = { left: 65, right: 40, top: 75, bottom: 65 };
+    const W = 1200, H = 360;
+    const cw = W - pad.left - pad.right;
+    const ch = H - pad.top - pad.bottom;
+    const baseY = pad.top + ch;
+
+    const maxVal = Math.max(...rawData.map(d => d.count), 5);
+    const niceMax = Math.ceil(maxVal / 10) * 10 || 10;
+
+    const total = rawData.reduce((s, d) => s + d.count, 0);
+    const avg = (total / rawData.length).toFixed(1);
+    const peakIdx = rawData.findIndex(d => d.count === maxVal);
+
+    const pts = rawData.map((d, i) => ({
+      x: pad.left + (i / (rawData.length - 1)) * cw,
+      y: baseY - (d.count / niceMax) * ch,
+      ...d, i
+    }));
+
+    function smoothPath(points) {
+      if (points.length < 2) return '';
+      let d = `M${points[0].x.toFixed(1)} ${points[0].y.toFixed(1)}`;
+      for (let i = 0; i < points.length - 1; i++) {
+        const p0 = points[i === 0 ? i : i - 1];
+        const p1 = points[i];
+        const p2 = points[i + 1];
+        const p3 = points[i + 2 < points.length ? i + 2 : i + 1];
+        const cp1x = p1.x + (p2.x - p0.x) / 6;
+        const cp1y = p1.y + (p2.y - p0.y) / 6;
+        const cp2x = p2.x - (p3.x - p1.x) / 6;
+        const cp2y = p2.y - (p3.y - p1.y) / 6;
+        d += ` C${cp1x.toFixed(1)} ${cp1y.toFixed(1)}, ${cp2x.toFixed(1)} ${cp2y.toFixed(1)}, ${p2.x.toFixed(1)} ${p2.y.toFixed(1)}`;
+      }
+      return d;
+    }
+
+    const lineD = smoothPath(pts);
+    const areaD = `${lineD} L ${pts[pts.length-1].x.toFixed(1)} ${baseY} L ${pts[0].x.toFixed(1)} ${baseY} Z`;
+
+    document.getElementById('linePath').setAttribute('d', lineD);
+    document.getElementById('areaPath').setAttribute('d', areaD);
+
+    // Grid
+    const gridG = document.getElementById('grid');
+    for (let i = 0; i <= 4; i++) {
+      const y = baseY - (i / 4) * ch;
+      const val = Math.round((i / 4) * niceMax);
+      gridG.innerHTML += `
+        <line x1="${pad.left}" y1="${y.toFixed(1)}" x2="${W - pad.right}" y2="${y.toFixed(1)}" stroke="#21262d" stroke-dasharray="3 3"/>
+        <text x="${pad.left - 12}" y="${(y + 4).toFixed(1)}" fill="#484f58" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" text-anchor="end">${val}</text>`;
+    }
+
+    // X axis - show every day, label every 5 days
+    const xAxisG = document.getElementById('xAxis');
+    xAxisG.innerHTML = `<line x1="${pad.left}" y1="${baseY}" x2="${W - pad.right}" y2="${baseY}" stroke="#21262d" stroke-width="1"/>`;
+
+    const months = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+    const dayNames = ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'];
+
+    pts.forEach((p, i) => {
+      const d = new Date(p.date + 'T12:00:00');
+      const day = d.getDate();
+      const month = d.getMonth();
+      const showLabel = (i % 5 === 0) || (i === pts.length - 1);
+
+      if (showLabel) {
+        const label = `${day} ${months[month]}`;
+        const isPeak = i === peakIdx;
+        xAxisG.innerHTML += `
+          <line x1="${p.x.toFixed(1)}" y1="${baseY}" x2="${p.x.toFixed(1)}" y2="${baseY + 6}" stroke="#30363d"/>
+          <text x="${p.x.toFixed(1)}" y="${baseY + 22}" fill="${isPeak ? '#00E396' : '#8b949e'}" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="${isPeak ? '700' : '400'}" text-anchor="middle">${label}</text>`;
+      } else {
+        xAxisG.innerHTML += `<line x1="${p.x.toFixed(1)}" y1="${baseY}" x2="${p.x.toFixed(1)}" y2="${baseY + 3}" stroke="#21262d"/>`;
+      }
+    });
+
+    // Data points
+    const ptsG = document.getElementById('points');
+    pts.forEach((p, i) => {
+      const isPeak = i === peakIdx;
+      if (isPeak) {
+        ptsG.innerHTML += `
+          <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="8" fill="#00E396" fill-opacity="0.20"/>
+          <circle class="data-point" cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="5" fill="#00E396" stroke="#0d1117" stroke-width="2"
+            data-idx="${i}" data-date="${p.date}" data-count="${p.count}"/>`;
+      } else {
+        ptsG.innerHTML += `
+          <circle class="data-point" cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2"
+            data-idx="${i}" data-date="${p.date}" data-count="${p.count}"/>`;
+      }
+    });
+
+    // Tooltip + hover line
+    const wrapper = document.getElementById('chartWrapper');
+    const svg = document.getElementById('chart');
+    const tooltip = document.getElementById('tooltip');
+    const hoverLine = document.getElementById('hoverLine');
+    const ttDate = tooltip.querySelector('.tt-date');
+    const ttValue = tooltip.querySelector('.tt-value');
+
+    const星期 = ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'];
+
+    svg.addEventListener('mousemove', (e) => {
+      const rect = svg.getBoundingClientRect();
+      const scaleX = W / rect.width;
+      const mouseX = (e.clientX - rect.left) * scaleX;
+
+      let closest = null, minDist = Infinity;
+      pts.forEach(p => {
+        const dist = Math.abs(p.x - mouseX);
+        if (dist < minDist) { minDist = dist; closest = p; }
+      });
+
+      if (closest && minDist < cw / rawData.length) {
+        const d = new Date(closest.date + 'T12:00:00');
+        const dayName = 星期[d.getDay()];
+        const dayNum = d.getDate();
+        const monthName = months[d.getMonth()];
+        const year = d.getFullYear();
+
+        ttDate.textContent = `${dayName}, ${dayNum} ${monthName} ${year}`;
+        ttValue.innerHTML = `<span>${closest.count}</span> commit${closest.count !== 1 ? 's' : ''}`;
+
+        const tooltipW = tooltip.offsetWidth;
+        const tooltipH = tooltip.offsetHeight;
+        let tx = (closest.x / W) * rect.width - tooltipW / 2;
+        let ty = (closest.y / H) * rect.height - tooltipH - 14;
+
+        if (tx < 8) tx = 8;
+        if (tx + tooltipW > rect.width - 8) tx = rect.width - tooltipW - 8;
+        if (ty < 8) ty = (closest.y / H) * rect.height + 14;
+
+        tooltip.style.left = tx + 'px';
+        tooltip.style.top = ty + 'px';
+        tooltip.style.opacity = '1';
+
+        hoverLine.style.left = (closest.x / W * rect.width) + 'px';
+        hoverLine.style.opacity = '1';
+      }
+    });
+
+    svg.addEventListener('mouseleave', () => {
+      tooltip.style.opacity = '0';
+      hoverLine.style.opacity = '0';
+    });
+  </script>
+</body>
+</html>
