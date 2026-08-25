@@ -1,12 +1,14 @@
 <div align="center">
 
-# Windson Martins
+# 👋 Olá, eu sou o Windson Martins
 
-### Full Stack Developer · Back-end Focused
+### Full Stack Developer · Foco em Back-end
+
+<img src="assets/banner-top.gif" alt="Banner" width="100%">
 
 `PHP` · `Laravel` · `React` · `JavaScript` · `Python` · `SQL`
 
-Building reliable software for real-world business problems — from critical systems and APIs to SaaS, BI and automation.
+Construindo software confiável para problemas reais de negócio — de sistemas críticos e APIs a SaaS, BI e automação.
 
 <p>
   <a href="https://github.com/veruscodes"><img src="https://img.shields.io/badge/GitHub-veruscodes-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
@@ -14,23 +16,23 @@ Building reliable software for real-world business problems — from critical sy
   <a href="https://veruscodes.github.io/windsonms/"><img src="https://img.shields.io/badge/Portfolio-Online-0d1117?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
 </p>
 
-📍 Vitória da Conquista, BA · 🇧🇷 · Open to remote, hybrid and on-site opportunities
+📍 Vitória da Conquista, BA · 🇧🇷 · Aberto a oportunidades remotas, híbridas e presenciais
 
 </div>
 
 ---
 
-## 👋 About me
+## 🧑‍💻 Sobre mim
 
-I'm a **Full Stack Developer** with a stronger focus on **back-end engineering**, working on applications that need to be useful, stable and maintainable in production.
+Sou um **Desenvolvedor Full Stack** com foco mais forte em **engenharia back-end**, trabalhando em aplicações que precisam ser úteis, estáveis e sustentáveis em produção.
 
-My experience includes **24/7 critical systems**, hospital and administrative environments, SaaS products, dashboards, billing, permissions, APIs, integrations and legacy modernization.
+Minha experiência inclui **sistemas críticos 24/7**, ambientes hospitalares e administrativos, produtos SaaS, dashboards, faturamento, permissões, APIs, integrações e modernização de legado.
 
-I turn complex business requirements into software with clear architecture, reliable data flow and practical user experience.
+Transformo requisitos complexos de negócio em software com arquitetura clara, fluxo de dados confiável e experiência prática ao usuário.
 
 ---
 
-## ⚡ What I build
+## ⚡ O que eu construo
 
 <table>
 <tr>
@@ -38,22 +40,22 @@ I turn complex business requirements into software with clear architecture, reli
 
 ### Backend & APIs
 
-- PHP / Laravel applications
-- REST APIs and integrations
-- Business rules and permissions
-- Automation and scheduled processes
-- Legacy modernization
+- Aplicações PHP / Laravel
+- APIs REST e integrações
+- Regras de negócio e permissões
+- Automação e processos agendados
+- Modernização de legado
 
 </td>
 <td width="50%">
 
-### Products & Data
+### Produtos & Dados
 
-- SaaS / Multi-tenant platforms
-- BI dashboards and KPIs
-- Administrative systems
-- Data integration and ETL
-- E-commerce and digital products
+- Plataformas SaaS / Multi-tenant
+- Dashboards de BI e KPIs
+- Sistemas administrativos
+- Integração de dados e ETL
+- E-commerce e produtos digitais
 
 </td>
 </tr>
@@ -61,49 +63,31 @@ I turn complex business requirements into software with clear architecture, reli
 
 ---
 
-## 🧰 Tech stack
+## 🧰 Tech Stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=php,laravel,js,ts,react,vue,python,nodejs,go,html,css,tailwind,bootstrap,mysql,postgres,docker,git,github,gitlab,linux&perline=10" alt="Technology stack">
+<img src="https://skillicons.dev/icons?i=php,laravel,js,ts,react,vue,python,nodejs,go,html,css,tailwind,bootstrap,mysql,postgres,docker,git,github,gitlab,linux&perline=10" alt="Stack de tecnologias">
 
 </div>
 
 ### Business Intelligence
 
-`TARGIT BI` · `ETL` · `InMemory` · `Scheduler` · `Dashboards` · `Data Analysis`
+`TARGIT BI` · `ETL` · `InMemory` · `Scheduler` · `Dashboards` · `Análise de Dados`
 
 ---
 
-## 🚀 Featured work
-
-### Apex Intelligence
-
-A SaaS concept focused on **commercial intelligence, competitor pricing and margin analysis**.
-
-`Laravel` `React` `PostgreSQL` `APIs` `ETL` `BI` `Multi-tenant`
-
-### Critical & Administrative Systems
-
-Development and maintenance of applications used in continuous-operation environments, including **hospital workflows, billing, permissions, reports and integrations**.
-
-`PHP` `Laravel` `CodeIgniter` `MySQL` `PostgreSQL` `BI`
-
-### Automation & Integrations
-
-Solutions that connect systems, reduce repetitive work and turn operational processes into reliable automated flows.
-
-`Laravel` `Python` `APIs` `Schedulers` `Webhooks`
-
----
-
-## 📊 GitHub activity
+## 📊 Atividade no GitHub
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=veruscodes&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="GitHub statistics">
+<a href="https://github.com/veruscodes">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=veruscodes&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" alt="Estatísticas do GitHub">
+</a>
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=veruscodes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Top languages">
+<a href="https://github.com/veruscodes">
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=veruscodes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Linguagens mais usadas">
+</a>
 
 </div>
 
@@ -111,56 +95,84 @@ Solutions that connect systems, reduce repetitive work and turn operational proc
 
 <div align="center">
 
-<img src="assets/activity.svg" width="95%" alt="GitHub contribution activity">
+<a href="https://github.com/veruscodes">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=veruscodes&theme=tokyonight&hide_border=true" alt="Sequência de commits" width="70%">
+</a>
 
 </div>
 
-> The activity graph is stored locally in the repository, so the README does not depend on the Activity Graph Vercel endpoint.
+<br>
+
+<div align="center">
+
+<a href="https://github.com/veruscodes">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=veruscodes&theme=tokyonight&hide_border=true&color=58a6ff" alt="Gráfico de atividade" width="95%">
+</a>
+
+<br>
+
+<a href="https://github.com/veruscodes">
+  <img src="https://ghchart.rshah.org/veruscodes" alt="GitHub Contribution Graph" width="95%">
+</a>
+
+</div>
 
 ---
 
-## 🧠 Engineering mindset
+## 🏆 Conquistas & Troféus
+
+<div align="center">
+
+<a href="https://github.com/veruscodes">
+  <img src="https://github-profile-trophy.vercel.app/?username=veruscodes&theme=tokyonight&no-frame=true&no-bg=false&column=7" alt="Troféus do GitHub">
+</a>
+
+</div>
+
+---
+
+## 🧠 Mentalidade de Engenharia
 
 ```text
-Business problem
+Problema de negócio
       ↓
-Understand the real requirement
+Entender o requisito real
       ↓
-Design a simple and maintainable solution
+Projetar uma solução simples e sustentável
       ↓
-Build · integrate · test
+Construir · integrar · testar
       ↓
-Monitor performance and reliability
+Monitorar performance e confiabilidade
       ↓
-Improve continuously
+Melhorar continuamente
 ```
 
-I value **clarity, reliability, performance, security and maintainability** over unnecessary complexity.
+Valorizo **clareza, confiabilidade, performance, segurança e manutenibilidade** acima de complexidade desnecessária.
 
 ---
 
-## 🎯 Professional focus
+## 🎯 Foco Profissional
 
-- Full Stack development with stronger back-end ownership
-- Critical and administrative systems
-- APIs, integrations and automation
-- SaaS architecture and multi-tenancy
-- Database design and performance
-- BI, dashboards and operational intelligence
-- Modernization of legacy applications
-- Practical application of AI and automation
-
----
-
-## 🌎 Open to opportunities
-
-I'm interested in teams looking for someone with a **delivery mindset, organization, product vision and hands-on engineering experience**.
-
-**Remote · Hybrid · On-site**
+- Desenvolvimento Full Stack com maiorOwnership em back-end
+- Sistemas críticos e administrativos
+- APIs, integrações e automação
+- Arquitetura SaaS e multi-tenancy
+- Design e performance de banco de dados
+- BI, dashboards e inteligência operacional
+- Modernização de aplicações legadas
+- Aplicação prática de IA e automação
 
 ---
 
-## 📫 Let's connect
+## 🌎 Aberto a oportunidades
+
+Interessado em equipes que buscam alguém com **mentalidade de entrega, organização, visão de produto e experiência prática em engenharia**.
+
+**Remoto · Híbrido · Presencial**
+
+---
+
+## 📫 Vamos nos conectar
 
 <div align="center">
 
@@ -170,6 +182,6 @@ I'm interested in teams looking for someone with a **delivery mindset, organizat
 
 <br><br>
 
-<i>Transformando necessidades reais em software útil, organizado e escalável.</i>
+*Transformando necessidades reais em software útil, organizado e escalável.*
 
 </div>
