@@ -1,79 +1,137 @@
-<div align="center">
+<h1 align="center">Windson Martins</h1>
 
-# Windson Martins
-
-### Full Stack Developer · Back-end Focused
-
-<img src="assets/banner-top.gif" alt="Banner" width="100%">
-
-`PHP` · `Laravel` · `React` · `JavaScript` · `Python` · `SQL`
-
-Construindo software confiável para problemas reais de negócio.
-
-<p>
-  <a href="https://github.com/veruscodes"><img src="https://img.shields.io/badge/GitHub-veruscodes-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-  <a href="mailto:codeverus@gmail.com"><img src="https://img.shields.io/badge/Email-codeverus-0d1117?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://veruscodes.github.io/windsonms/"><img src="https://img.shields.io/badge/Portfolio-Online-0d1117?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
+<p align="center">
+  Full Stack Developer — PHP · Laravel · JavaScript · React.js<br />
+  Vitória da Conquista, BA · aberto a oportunidades remotas, híbridas ou presenciais
 </p>
 
-Vitória da Conquista, BA · Aberto a oportunidades remotas, híbridas e presenciais
+<p align="center">
+  <a href="https://github.com/veruscodes">
+    <img src="https://img.shields.io/badge/GitHub-veruscodes-181717?style=flat-square&logo=github&logoColor=white" />
+  </a>
+  <a href="mailto:codeverus@gmail.com">
+    <img src="https://img.shields.io/badge/Email-codeverus%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://veruscodes.github.io/windsonms/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-ver%20site-0e75b6?style=flat-square&logo=googlechrome&logoColor=white" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=veruscodes&style=flat-square&color=0e75b6" />
+</p>
 
-</div>
+<p align="center">
+  <img src="assets/banner-top.gif" alt="Banner" width="420" />
+</p>
 
 ---
 
 ## Sobre mim
 
-Sou um **Full Stack Developer** com foco em **back-end**, trabalhando em aplicações que precisam ser úteis, estáveis e sustentáveis em produção.
+Desenvolvedor Full Stack, focado na construção e sustentação de sistemas que resolvem problemas reais de negócio. Atuo no desenvolvimento de aplicações web, APIs, automações e integrações, com atenção à organização do código, performance, segurança e confiabilidade.
 
-Minha experiência inclui sistemas críticos 24/7, ambientes hospitalares e administrativos, produtos SaaS, dashboards, faturamento, permissões, APIs, integrações e modernização de legado.
+Tenho experiência com sistemas críticos de operação 24/7, especialmente em ambientes hospitalares e administrativos, além de plataformas SaaS, dashboards, faturamento, controle de permissões e modernização de sistemas legados.
+
+Possuo perfil prático e orientado à entrega: transformo necessidades complexas em soluções funcionais, estáveis, escaláveis e preparadas para o uso contínuo.
 
 ---
 
-## Tech Stack
+## Stack principal
 
 <div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="42" alt="HTML5" title="HTML5" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="42" alt="CSS3" title="CSS3" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="42" alt="JavaScript" title="JavaScript" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="42" alt="Vue.js" title="Vue.js" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="42" alt="React" title="React" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" height="42" alt="WordPress" title="WordPress" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" height="42" alt="WooCommerce" title="WooCommerce" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="42" alt="PHP" title="PHP" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" height="42" alt="Laravel" title="Laravel" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" height="42" alt="CodeIgniter" title="CodeIgniter" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="42" alt="Python" title="Python" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="42" alt="Bootstrap" title="Bootstrap" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="42" alt="MySQL" title="MySQL" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="42" alt="PostgreSQL" title="PostgreSQL" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="42" alt="Git" title="Git" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="42" alt="GitLab" title="GitLab" />
+</div>
 
-<img src="https://skillicons.dev/icons?i=php,laravel,js,ts,react,vue,python,nodejs,go,html,css,tailwind,bootstrap,mysql,postgres,docker,git,github,gitlab,linux&perline=10" alt="Stack de tecnologias">
+<p align="center">
+  <img src="https://img.shields.io/badge/BI-Business%20Intelligence-0e75b6?style=flat-square" />
+  <img src="https://img.shields.io/badge/TARGIT-InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=flat-square" />
+</p>
 
+---
+
+## O que eu entrego
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="40" /><br/>
+      <strong>Backends robustos</strong><br/>
+      <sub>PHP · Laravel · Go<br/>Estruturados, seguros e<br/>focados em regra de negócio</sub>
+    </td>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="40" /><br/>
+      <strong>Aplicações web</strong><br/>
+      <sub>JavaScript · Vue.js · React<br/>Integrações modernas com<br/>foco em usabilidade</sub>
+    </td>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" /><br/>
+      <strong>APIs e integrações</strong><br/>
+      <sub>Conexão entre sistemas<br/>Automações de fluxo e<br/>tarefas operacionais</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" /><br/>
+      <strong>Dashboards & relatórios</strong><br/>
+      <sub>BI · Módulos administrativos<br/>Tomada de decisão<br/>baseada em dados</sub>
+    </td>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" /><br/>
+      <strong>IA aplicada</strong><br/>
+      <sub>Automação inteligente<br/>Ganho de produtividade<br/>e inteligência de processo</sub>
+    </td>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" /><br/>
+      <strong>Modernização de sistemas</strong><br/>
+      <sub>Refatoração de legados<br/>Arquiteturas simples,<br/>práticas e sustentáveis</sub>
+    </td>
+  </tr>
+</table>
 </div>
 
 ---
 
-## O que eu construo
+## Foco profissional
 
-<table>
-<tr>
-<td width="50%">
-
-**Backend & APIs**
-
-- Aplicações PHP / Laravel
-- APIs REST e integrações
-- Regras de negócio e permissões
-- Automação e processos agendados
-- Modernização de legado
-
-</td>
-<td width="50%">
-
-**Produtos & Dados**
-
-- Plataformas SaaS / Multi-tenant
-- Dashboards de BI e KPIs
-- Sistemas administrativos
-- Integração de dados e ETL
-- E-commerce e produtos digitais
-
-</td>
-</tr>
-</table>
-
-**Business Intelligence:** TARGIT BI · ETL · InMemory · Scheduler · Dashboards · Análise de Dados
+- Desenvolvimento Full Stack com maior atuação em back-end
+- Sistemas críticos, hospitalares e administrativos
+- APIs, integrações e automação de processos
+- Sustentação e modernização de sistemas legados
+- Bancos de dados, performance e regras de negócio complexas
+- Plataformas SaaS, e-commerce e produtos digitais
 
 ---
 
-## Atividade no GitHub
+## GitHub Stats
 
 <div align="center">
 
@@ -113,7 +171,7 @@ Minha experiência inclui sistemas críticos 24/7, ambientes hospitalares e admi
 
 </div>
 
-> Estatísticas geradas automaticamente via GitHub Actions.
+> Estatísticas geradas automaticamente via GitHub Actions. Atualizadas a cada 6h.
 
 ---
 
@@ -133,40 +191,21 @@ Monitor performance and reliability
 Improve continuously
 ```
 
-Clareza, confiabilidade, performance, segurança e manutenibilidade acima de complexidade desnecessária.
-
----
-
-## Foco Profissional
-
-- Full Stack com maior ownership em back-end
-- Sistemas críticos e administrativos
-- APIs, integrações e automação
-- Arquitetura SaaS e multi-tenancy
-- Design e performance de banco de dados
-- BI, dashboards e inteligência operacional
-- Modernização de aplicações legadas
-
 ---
 
 ## Aberto a oportunidades
 
-Interessado em equipes que buscam alguém com mentalidade de entrega, organização, visão de produto e experiência prática em engenharia.
-
-**Remoto · Híbrido · Presencial**
+Times que precisem de alguém com perfil de entrega, organização e visão de produto.
 
 ---
 
-## Vamos nos conectar
+## Contato
 
-<div align="center">
+- **Email:** codeverus@gmail.com
+- **GitHub:** [github.com/veruscodes](https://github.com/veruscodes)
+- **Portfolio:** [veruscodes.github.io/windsonms](https://veruscodes.github.io/windsonms/)
+- **Localização:** Vitória da Conquista, BA
 
-<a href="mailto:codeverus@gmail.com"><img src="https://img.shields.io/badge/Email-codeverus%40gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-<a href="https://github.com/veruscodes"><img src="https://img.shields.io/badge/GitHub-veruscodes-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-<a href="https://veruscodes.github.io/windsonms/"><img src="https://img.shields.io/badge/Portfolio-veruscodes.github.io-0d1117?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
-
-<br><br>
-
-*Transformando necessidades reais em software útil, organizado e escalável.*
-
-</div>
+<p align="center">
+  <i>Transformando necessidade real em software útil, organizado e escalável.</i>
+</p>
