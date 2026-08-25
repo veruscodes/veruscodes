@@ -22,7 +22,9 @@
   <img src="assets/banner-top.gif" alt="Banner" width="100%" />
 </p>
 
-Sobre mim
+---
+
+## Sobre mim
 
 Desenvolvedor Full Stack, focado na construção e sustentação de sistemas que resolvem problemas reais de negócio. Atuo no desenvolvimento de aplicações web, APIs, automações e integrações, com atenção à organização do código, performance, segurança e confiabilidade.
 
@@ -30,7 +32,9 @@ Tenho experiência com sistemas críticos de operação 24/7, especialmente em a
 
 Possuo perfil prático e orientado à entrega: transformo necessidades complexas em soluções funcionais, estáveis, escaláveis e preparadas para o uso contínuo.
 
-Stack principal
+---
+
+## Stack principal
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="42" alt="HTML5" title="HTML5" />
@@ -71,7 +75,9 @@ Stack principal
   <img src="https://img.shields.io/badge/TARGIT-InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=flat-square" />
 </p>
 
-O que eu entrego
+---
+
+## O que eu entrego
 
 <div align="center">
 <table>
@@ -112,7 +118,9 @@ O que eu entrego
 </table>
 </div>
 
-Foco profissional
+---
+
+## Foco profissional
 
 ✦ Desenvolvimento Full Stack com maior atuação em back-end
 ✦ Sistemas críticos, hospitalares e administrativos
@@ -121,7 +129,9 @@ Foco profissional
 ✦ Bancos de dados, performance e regras de negócio complexas
 ✦ Plataformas SaaS, e-commerce e produtos digitais
 
-GitHub Stats
+---
+
+## GitHub Stats
 
 <div align="center">
 
@@ -139,34 +149,32 @@ GitHub Stats
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=veruscodes&theme=tokyo-night&hide_border=true&area=true" />
+<img src="assets/stats/calendar.svg" alt="Calendário de contribuições" width="100%" />
 
 </div>
 
-Aberto a oportunidades
+> Gráfico de contribuições gerado automaticamente via GitHub Actions (self-hosted, sem depender de serviço externo).
 
+---
 
+## Aberto a oportunidades
 
 Times que precisem de alguém com perfil de entrega, organização e visão de produto.
 
-⚠️ Nota: Os arquivos HTML contidos nestes repositórios servem apenas para fins de demonstração e visualização estática do layout. Eles não representam a arquitetura, o código real ou o escopo completo do projeto final.
+> ⚠️ Nota: Os arquivos HTML contidos nestes repositórios servem apenas para fins de demonstração e visualização estática do layout. Eles não representam a arquitetura, o código real ou o escopo completo do projeto final.
 
-Contato
+---
 
-📧 Email: codeverus@gmail.com
+## Contato
 
-🐙 GitHub: github.com/veruscodes
+📧 Email: [codeverus@gmail.com](mailto:codeverus@gmail.com)
 
-🌐 Portfolio: veruscodes.github.io/windsonms
+🐙 GitHub: [github.com/veruscodes](https://github.com/veruscodes)
+
+🌐 Portfolio: [veruscodes.github.io/windsonms](https://veruscodes.github.io/windsonms/)
 
 📍 Vitória da Conquista, BA
 
 <p align="center">
   <i>Transformando necessidade real em software útil, organizado e escalável.</i>
 </p>
-por que?
-
-```
-Invalid upstream response (402)
-https://camo.githubusercontent.com/bf66704359d92cf69fcb11837a94bd1dad79c59e9d0fcdbccc0aa56070c72f7b/68747470733a2f2f6769746875622d726561646d652d61637469766974792d67726170682e76657263656c2e6170702f67726170683f757365726e616d653d7665727573636f646573267468656d653d746f6b796f2d6e6967687426686964655f626f726465723d7472756526617265613d74727565
-```
