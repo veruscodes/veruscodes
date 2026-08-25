@@ -85,7 +85,7 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
     <td align="center" width="200">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="40" /><br/>
       <strong>Backends robustos</strong><br/>
-      <sub>PHP · Laravel · Go<br/>Estruturados, seguros e<br/>focados em regra de negócio</sub>
+      <sub>PHP · Laravel · Node.js · Go<br/>APIs REST, Jobs, Queues<br/>e serviços escaláveis</sub>
     </td>
     <td align="center" width="200">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="40" /><br/>
@@ -95,14 +95,14 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
     <td align="center" width="200">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" /><br/>
       <strong>APIs e integrações</strong><br/>
-      <sub>Conexão entre sistemas<br/>Automações de fluxo e<br/>tarefas operacionais</sub>
+      <sub>REST · Webhooks · Filas<br/>Conexão entre sistemas<br/>Automações operacionais</sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="200">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" /><br/>
       <strong>Dashboards & relatórios</strong><br/>
-      <sub>BI · Módulos administrativos<br/>Tomada de decisão<br/>baseada em dados</sub>
+      <sub>MySQL · PostgreSQL · BI<br/>Módulos administrativos<br/>e tomada de decisão</sub>
     </td>
     <td align="center" width="200">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" /><br/>
