@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mhardik003/mhardik003/main/gifs/mario.gif" alt="Mario pixel art" width="420" />
+  <img src="assets/banner-top.gif" alt="Banner" width="100%" />
 </p>
 
 Sobre mim
