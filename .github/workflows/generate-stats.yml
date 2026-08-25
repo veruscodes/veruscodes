@@ -252,11 +252,11 @@ jobs:
             }));
 
             const width = 1200;
-            const height = 320;
-            const paddingLeft = 60;
-            const paddingRight = 60;
-            const paddingTop = 90;
-            const paddingBottom = 60;
+            const height = 340;
+            const paddingLeft = 70;
+            const paddingRight = 50;
+            const paddingTop = 95;
+            const paddingBottom = 65;
 
             const chartWidth = width - paddingLeft - paddingRight;
             const chartHeight = height - paddingTop - paddingBottom;
@@ -264,10 +264,10 @@ jobs:
 
             const values = buckets.map(b => b.total);
             const sumContributions = values.reduce((a, b) => a + b, 0);
-            const totalCommits = totalContributions || sumContributions || 0;
+            const commitsTotal = totalContributions || sumContributions || 0;
             const maxVal = Math.max(...values, 10);
             const niceMax = Math.ceil(maxVal / 10) * 10 || 50;
-            const weeklyAvg = (totalCommits / 52).toFixed(1);
+            const weeklyAvg = (commitsTotal / 52).toFixed(1);
             const peakIndex = values.indexOf(maxVal);
 
             const points = buckets.map((b, i) => {
@@ -285,36 +285,36 @@ jobs:
               const y = baseline - (i * chartHeight) / gridSteps;
               const val = Math.round((i * niceMax) / gridSteps);
               gridLines += `
-                <line x1="${paddingLeft}" y1="${y.toFixed(1)}" x2="${width - paddingRight}" y2="${y.toFixed(1)}" stroke="#334155" stroke-opacity="0.25" stroke-dasharray="4 4"/>
-                <text x="${paddingLeft - 12}" y="${(y + 4).toFixed(1)}" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="end">${val}</text>
+                <line x1="${paddingLeft}" y1="${y.toFixed(1)}" x2="${width - paddingRight}" y2="${y.toFixed(1)}" stroke="#2E374A" stroke-dasharray="3 3"/>
+                <text x="${paddingLeft - 14}" y="${(y + 4).toFixed(1)}" fill="#6C7A9C" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">${val}</text>
               `;
             }
 
-            let xLabels = '';
+            let xLabels = `<line x1="${paddingLeft}" y1="${baseline}" x2="${width - paddingRight}" y2="${baseline}" stroke="#2E374A" stroke-width="1"/>`;
             points.forEach((p, i) => {
               const isPeak = i === peakIndex;
               xLabels += `
-                <line x1="${p.x.toFixed(1)}" y1="${baseline}" x2="${p.x.toFixed(1)}" y2="${baseline + 6}" stroke="${isPeak ? '#38BDF8' : '#334155'}" stroke-opacity="${isPeak ? '0.8' : '0.4'}"/>
-                <text x="${p.x.toFixed(1)}" y="${baseline + 24}" fill="${isPeak ? '#38BDF8' : '#94A3B8'}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="${isPeak ? '700' : '500'}" text-anchor="middle">${p.label}</text>
+                <line x1="${p.x.toFixed(1)}" y1="${baseline}" x2="${p.x.toFixed(1)}" y2="${baseline + 6}" stroke="#2E374A"/>
+                <text x="${p.x.toFixed(1)}" y="${baseline + 26}" fill="${isPeak ? '#00E396' : '#8C9BAE'}" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="${isPeak ? '700' : '400'}" text-anchor="middle">${p.label}</text>
               `;
             });
 
-            let dots = '';
+            let markers = '';
             points.forEach((p, i) => {
               const isPeak = i === peakIndex;
               if (isPeak) {
-                dots += `
-                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="9" fill="#38BDF8" fill-opacity="0.25" filter="url(#glow)"/>
-                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="5" fill="#38BDF8" stroke="#0F172A" stroke-width="2"/>
+                markers += `
+                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="8" fill="#00E396" fill-opacity="0.25"/>
+                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="5" fill="#00E396" stroke="#0E1326" stroke-width="2"/>
                   
                   <g transform="translate(${p.x.toFixed(1)}, ${(p.y - 32).toFixed(1)})">
-                    <rect x="-45" y="-18" width="90" height="24" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2" filter="url(#dropShadow)"/>
-                    <text x="0" y="-2" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle">🔥 ${p.total} commits</text>
+                    <rect x="-42" y="-18" width="84" height="24" rx="4" fill="#1B213B" stroke="#00E396" stroke-width="1.5"/>
+                    <text x="0" y="-2" fill="#00E396" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">${p.total} commits</text>
                   </g>
                 `;
               } else {
-                dots += `
-                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+                markers += `
+                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4.5" fill="#008FFB" stroke="#0E1326" stroke-width="2">
                     <title>${p.label}: ${p.total} commits</title>
                   </circle>
                 `;
@@ -323,75 +323,55 @@ jobs:
 
             return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" role="img" aria-label="GitHub Commit Activity Chart">
             <defs>
-              <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#0B0F19"/>
-                <stop offset="50%" stop-color="#0F172A"/>
-                <stop offset="100%" stop-color="#090D16"/>
+              <linearGradient id="apexBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0E1326"/>
+                <stop offset="100%" stop-color="#141B33"/>
               </linearGradient>
 
-              <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4"/>
-                <stop offset="50%" stop-color="#818CF8" stop-opacity="0.1"/>
-                <stop offset="100%" stop-color="#C084FC" stop-opacity="0.3"/>
+              <linearGradient id="apexLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#008FFB"/>
+                <stop offset="60%" stop-color="#00E396"/>
+                <stop offset="100%" stop-color="#775DD0"/>
               </linearGradient>
 
-              <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#38BDF8"/>
-                <stop offset="50%" stop-color="#818CF8"/>
-                <stop offset="100%" stop-color="#C084FC"/>
+              <linearGradient id="apexArea" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#008FFB" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#008FFB" stop-opacity="0.0"/>
               </linearGradient>
 
-              <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
-                <stop offset="40%" stop-color="#818CF8" stop-opacity="0.15"/>
-                <stop offset="100%" stop-color="#C084FC" stop-opacity="0.0"/>
+              <linearGradient id="apexBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2E374A"/>
+                <stop offset="100%" stop-color="#1B213B"/>
               </linearGradient>
-
-              <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-                <feGaussianBlur stdDeviation="6" result="blur"/>
-                <feMerge>
-                  <feMergeNode in="blur"/>
-                  <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-              </filter>
-
-              <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
-                <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
-              </filter>
             </defs>
 
-            <rect width="${width}" height="${height}" rx="16" fill="url(#bgGrad)"/>
-            <rect width="${width - 2}" height="${height - 2}" x="1" y="1" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+            <rect width="${width}" height="${height}" rx="12" fill="url(#apexBg)"/>
+            <rect width="${width - 2}" height="${height - 2}" x="1" y="1" rx="11" fill="none" stroke="url(#apexBorder)" stroke-width="1"/>
 
             <g transform="translate(40, 42)">
-              <circle cx="0" cy="-4" r="5" fill="#38BDF8" filter="url(#glow)"/>
-              <text x="16" y="0" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">Commit Activity</text>
-              <text x="155" y="0" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400">· Last 12 months</text>
+              <text x="0" y="0" fill="#F1F5F9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Commit Activity</text>
+              <text x="0" y="22" fill="#6C7A9C" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13">Monthly commit distribution over the last 12 months</text>
             </g>
 
             <g transform="translate(${width - 40}, 42)">
-              <g transform="translate(-240, -14)">
-                <rect x="0" y="0" width="115" height="28" rx="14" fill="#1E293B" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
-                <text x="57.5" y="18" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">
-                  <tspan fill="#38BDF8" font-weight="700">${totalCommits}</tspan> commits
-                </text>
+              <g transform="translate(-240, -4)">
+                <circle cx="0" cy="0" r="4" fill="#008FFB"/>
+                <text x="12" y="4" fill="#94A3B8" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12">Total: <tspan fill="#F1F5F9" font-weight="700">${commitsTotal}</tspan></text>
               </g>
-
-              <g transform="translate(-115, -14)">
-                <rect x="0" y="0" width="115" height="28" rx="14" fill="#1E293B" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
-                <text x="57.5" y="18" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">
-                  <tspan fill="#A78BFA" font-weight="700">${weeklyAvg}</tspan> / week
-                </text>
+              <g transform="translate(-130, -4)">
+                <circle cx="0" cy="0" r="4" fill="#00E396"/>
+                <text x="12" y="4" fill="#94A3B8" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12">Avg: <tspan fill="#F1F5F9" font-weight="700">${weeklyAvg}</tspan>/wk</text>
               </g>
             </g>
 
             ${gridLines}
-            <path d="${areaPath}" fill="url(#areaGrad)"/>
-            <path d="${linePath}" fill="none" stroke="url(#lineGrad)" stroke-width="3.5" filter="url(#glow)"/>
-            ${dots}
+            <path d="${areaPath}" fill="url(#apexArea)"/>
+            <path d="${linePath}" fill="none" stroke="url(#apexLine)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            ${markers}
             ${xLabels}
           </svg>`;
           }
+
 
           (async () => {
             const result = await getContributions();
