@@ -136,27 +136,7 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 <div align="center">
 
 <a href="https://github.com/veruscodes">
-  <img src="assets/stats/overview.svg" alt="Visão geral do perfil" width="100%">
-</a>
-
-</div>
-
-<br>
-
-<div align="center">
-
-<a href="https://github.com/veruscodes">
   <img src="assets/stats/streak.svg" alt="Sequência de commits" width="100%">
-</a>
-
-</div>
-
-<br>
-
-<div align="center">
-
-<a href="https://github.com/veruscodes">
-  <img src="assets/stats/commit-activity.svg" alt="Atividade de commits" width="100%">
 </a>
 
 </div>
@@ -171,7 +151,7 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 
 </div>
 
-> Estatísticas geradas automaticamente via GitHub Actions. Atualizadas a cada 6h.
+> Estatísticas geradas automaticamente via GitHub Actions.
 
 ---
 
