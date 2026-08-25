@@ -124,7 +124,7 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 
 <div align="center">
   <a href="foco-profissional.html" target="_blank">
-    <img src="assets/foco-profissional.svg" alt="Foco Profissional - Clique para ver versão interativa com ApexTree" width="100%" />
+    <img src="assets/foco-profissional.svg?v=4" alt="Foco Profissional - Clique para ver versão interativa com ApexTree" width="100%" />
   </a>
   <sub><a href="foco-profissional.html" target="_blank">Ver versão interativa (ApexTree) &rarr;</a></sub>
 </div>
