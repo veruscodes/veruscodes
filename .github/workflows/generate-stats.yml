@@ -242,16 +242,22 @@ jobs:
 
           function generateActivitySVG(weeks, totalContributions = 0) {
             const now = new Date();
-            const buckets = [];
-            for (let i = 11; i >= 0; i--) {
-              const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
-              buckets.push({ label: d.toLocaleString('en-US', { month: 'short' }), year: d.getFullYear(), month: d.getMonth(), total: 0 });
+            const days = [];
+            for (let i = 29; i >= 0; i--) {
+              const d = new Date(now);
+              d.setDate(d.getDate() - i);
+              const dateStr = d.toISOString().split('T')[0];
+              let count = 0;
+              weeks.forEach(w => w.contributionDays.forEach(cd => {
+                if (cd.date === dateStr) count = cd.contributionCount;
+              }));
+              days.push({
+                label: d.toLocaleString('en-US', { month: 'short', day: 'numeric' }),
+                shortLabel: d.getDate().toString(),
+                total: count,
+                date: dateStr
+              });
             }
-            weeks.forEach(w => w.contributionDays.forEach(day => {
-              const date = new Date(day.date);
-              const b = buckets.find(b => b.year === date.getFullYear() && b.month === date.getMonth());
-              if (b) b.total += day.contributionCount;
-            }));
 
             const width = 1200;
             const height = 340;
@@ -264,18 +270,18 @@ jobs:
             const chartHeight = height - paddingTop - paddingBottom;
             const baseline = paddingTop + chartHeight;
 
-            const values = buckets.map(b => b.total);
+            const values = days.map(d => d.total);
             const sumContributions = values.reduce((a, b) => a + b, 0);
             const commitsTotal = totalContributions || sumContributions || 0;
-            const maxVal = Math.max(...values, 10);
-            const niceMax = Math.ceil(maxVal / 10) * 10 || 50;
-            const weeklyAvg = (commitsTotal / 52).toFixed(1);
+            const maxVal = Math.max(...values, 5);
+            const niceMax = Math.ceil(maxVal / 5) * 5 || 10;
+            const dailyAvg = (sumContributions / days.length).toFixed(1);
             const peakIndex = values.indexOf(maxVal);
 
-            const points = buckets.map((b, i) => {
-              const x = paddingLeft + (i * chartWidth) / (buckets.length - 1);
-              const y = baseline - (b.total / niceMax) * chartHeight;
-              return { x, y, label: b.label, total: b.total, year: b.year };
+            const points = days.map((d, i) => {
+              const x = paddingLeft + (i * chartWidth) / (days.length - 1);
+              const y = baseline - (d.total / niceMax) * chartHeight;
+              return { x, y, label: d.label, shortLabel: d.shortLabel, total: d.total, date: d.date };
             });
 
             const linePath = smoothPath(points);
@@ -295,10 +301,15 @@ jobs:
             let xLabels = `<line x1="${paddingLeft}" y1="${baseline}" x2="${width - paddingRight}" y2="${baseline}" stroke="#2E374A" stroke-width="1"/>`;
             points.forEach((p, i) => {
               const isPeak = i === peakIndex;
-              xLabels += `
-                <line x1="${p.x.toFixed(1)}" y1="${baseline}" x2="${p.x.toFixed(1)}" y2="${baseline + 6}" stroke="#2E374A"/>
-                <text x="${p.x.toFixed(1)}" y="${baseline + 26}" fill="${isPeak ? '#00E396' : '#8C9BAE'}" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="${isPeak ? '700' : '400'}" text-anchor="middle">${p.label}</text>
-              `;
+              const showLabel = i % 3 === 0 || isPeak;
+              if (showLabel) {
+                xLabels += `
+                  <line x1="${p.x.toFixed(1)}" y1="${baseline}" x2="${p.x.toFixed(1)}" y2="${baseline + 6}" stroke="#2E374A"/>
+                  <text x="${p.x.toFixed(1)}" y="${baseline + 26}" fill="${isPeak ? '#00E396' : '#8C9BAE'}" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="${isPeak ? '700' : '400'}" text-anchor="middle">${p.shortLabel}</text>
+                `;
+              } else {
+                xLabels += `<line x1="${p.x.toFixed(1)}" y1="${baseline}" x2="${p.x.toFixed(1)}" y2="${baseline + 4}" stroke="#2E374A"/>`;
+              }
             });
 
             let markers = '';
@@ -310,7 +321,7 @@ jobs:
                   <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="5" fill="#00E396" stroke="#0E1326" stroke-width="2"/>
                   
                   <g transform="translate(${p.x.toFixed(1)}, ${(p.y - 32).toFixed(1)})">
-                    <rect x="-42" y="-18" width="84" height="24" rx="4" fill="#1B213B" stroke="#00E396" stroke-width="1.5"/>
+                    <rect x="-46" y="-18" width="92" height="24" rx="4" fill="#1B213B" stroke="#00E396" stroke-width="1.5"/>
                     <text x="0" y="-2" fill="#00E396" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">${p.total} commits</text>
                   </g>
                 `;
@@ -352,7 +363,7 @@ jobs:
 
             <g transform="translate(40, 42)">
               <text x="0" y="0" fill="#F1F5F9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Commit Activity</text>
-              <text x="0" y="22" fill="#6C7A9C" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13">Monthly commit distribution over the last 12 months</text>
+              <text x="0" y="22" fill="#6C7A9C" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13">Daily commit activity over the last 30 days</text>
             </g>
 
             <g transform="translate(${width - 40}, 42)">
@@ -362,7 +373,7 @@ jobs:
               </g>
               <g transform="translate(-130, -4)">
                 <circle cx="0" cy="0" r="4" fill="#00E396"/>
-                <text x="12" y="4" fill="#94A3B8" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12">Avg: <tspan fill="#F1F5F9" font-weight="700">${weeklyAvg}</tspan>/wk</text>
+                <text x="12" y="4" fill="#94A3B8" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12">Avg: <tspan fill="#F1F5F9" font-weight="700">${dailyAvg}</tspan>/day</text>
               </g>
             </g>
 
