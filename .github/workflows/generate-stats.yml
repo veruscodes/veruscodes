@@ -73,23 +73,20 @@ jobs:
                         }
                       }
                     }
-                    repositories(first: 100, ownerAffiliations: OWNER) {
-                      nodes {
-                        name
-                        primaryLanguage { name color }
-                        stargazerCount
-                        forkCount
-                        description
-                      }
+                  }
+                  repositories(ownerAffiliations: OWNER, first: 100) {
+                    nodes {
+                      name
+                      primaryLanguage { name color }
+                      stargazerCount
+                      forkCount
+                      description
                     }
-                    pullRequests { totalCount }
-                    issues { totalCount }
-                    followers { totalCount }
-                    following { totalCount }
                   }
-                  repositoryContributions: repositories(ownerAffiliations: OWNER, first: 100) {
-                    nodes { name }
-                  }
+                  pullRequests { totalCount }
+                  issues { totalCount }
+                  followers { totalCount }
+                  following { totalCount }
                 }
               }
             `;
@@ -194,10 +191,10 @@ jobs:
           function generateOverviewSVG(data) {
             const stats = [
               { label: 'Total Contributions', value: data.contributionsCollection.contributionCalendar.totalContributions, color: '#58a6ff' },
-              { label: 'Public Repos', value: data.repositoryContributions.nodes.length, color: '#3fb950' },
-              { label: 'Pull Requests', value: data.contributionsCollection.pullRequests.totalCount, color: '#f0883e' },
-              { label: 'Issues', value: data.contributionsCollection.issues.totalCount, color: '#bc8cff' },
-              { label: 'Followers', value: data.contributionsCollection.followers.totalCount, color: '#f778ba' },
+              { label: 'Public Repos', value: data.repositories.nodes.length, color: '#3fb950' },
+              { label: 'Pull Requests', value: data.pullRequests.totalCount, color: '#f0883e' },
+              { label: 'Issues', value: data.issues.totalCount, color: '#bc8cff' },
+              { label: 'Followers', value: data.followers.totalCount, color: '#f778ba' },
             ];
 
             let items = '';
@@ -438,7 +435,7 @@ jobs:
               fs.writeFileSync('assets/stats/overview.svg', generateOverviewSVG(data));
 
               fs.writeFileSync('assets/stats/top-langs.svg', generateReposSVG(
-                data.contributionsCollection.repositories.nodes
+                data.repositories.nodes
               ));
 
               console.log('Stats generated successfully!');
