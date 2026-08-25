@@ -1,201 +1,172 @@
+<h1 align="center">Windson Martins</h1>
+
+<p align="center">
+  Full Stack Developer — PHP · Laravel · JavaScript · React.js<br />
+  Vitória da Conquista, BA · aberto a oportunidades remotas, híbridas ou presenciais
+</p>
+
+<p align="center">
+  <a href="https://github.com/veruscodes">
+    <img src="https://img.shields.io/badge/GitHub-veruscodes-181717?style=flat-square&logo=github&logoColor=white" />
+  </a>
+  <a href="mailto:codeverus@gmail.com">
+    <img src="https://img.shields.io/badge/Email-codeverus%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://veruscodes.github.io/windsonms/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-ver%20site-0e75b6?style=flat-square&logo=googlechrome&logoColor=white" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=veruscodes&style=flat-square&color=0e75b6" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mhardik003/mhardik003/main/gifs/mario.gif" alt="Mario pixel art" width="420" />
+</p>
+
+Sobre mim
+
+Desenvolvedor Full Stack, focado na construção e sustentação de sistemas que resolvem problemas reais de negócio. Atuo no desenvolvimento de aplicações web, APIs, automações e integrações, com atenção à organização do código, performance, segurança e confiabilidade.
+
+Tenho experiência com sistemas críticos de operação 24/7, especialmente em ambientes hospitalares e administrativos, além de plataformas SaaS, dashboards, faturamento, controle de permissões e modernização de sistemas legados.
+
+Possuo perfil prático e orientado à entrega: transformo necessidades complexas em soluções funcionais, estáveis, escaláveis e preparadas para o uso contínuo.
+
+Stack principal
+
 <div align="center">
-
-<img src="assets/banner-top.gif" alt="Banner" width="100%" />
-
-# Windson Martins
-
-### Full Stack Developer · PHP/Laravel · JavaScript/React · Sistemas críticos & BI
-
-<sub>6+ anos construindo e sustentando sistemas de negócio — do backend à decisão orientada por dados</sub>
-
-<br/>
-
-[![GitHub](https://img.shields.io/badge/GitHub-veruscodes-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/veruscodes)
-[![Email](https://img.shields.io/badge/Email-codeverus%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:codeverus@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-veruscodes.github.io-0e75b6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://veruscodes.github.io/windsonms/)
-[![Location](https://img.shields.io/badge/Vitória%20da%20Conquista-BA-2b2b2b?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
-
-![Profile Views](https://komarev.com/ghpvc/?username=veruscodes&style=for-the-badge&color=0e75b6&label=VISUALIZAÇÕES)
-![Status](https://img.shields.io/badge/status-aberto%20a%20oportunidades-3fb950?style=for-the-badge)
-
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="42" alt="HTML5" title="HTML5" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="42" alt="CSS3" title="CSS3" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="42" alt="JavaScript" title="JavaScript" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="42" alt="Vue.js" title="Vue.js" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="42" alt="React" title="React" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" height="42" alt="WordPress" title="WordPress" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" height="42" alt="WooCommerce" title="WooCommerce" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="42" alt="PHP" title="PHP" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" height="42" alt="Laravel" title="Laravel" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" height="42" alt="CodeIgniter" title="CodeIgniter" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="42" alt="Python" title="Python" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="42" alt="Bootstrap" title="Bootstrap" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="42" alt="MySQL" title="MySQL" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="42" alt="PostgreSQL" title="PostgreSQL" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="42" alt="Git" title="Git" />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="42" alt="GitLab" title="GitLab" />
 </div>
 
-<br/>
+<p align="center">
+  <img src="https://img.shields.io/badge/BI-Business%20Intelligence-0e75b6?style=flat-square" />
+  <img src="https://img.shields.io/badge/TARGIT-InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=flat-square" />
+</p>
 
-## 🧭 Sobre mim
+O que eu entrego
 
-Desenvolvedor Full Stack com **mais de 6 anos** de atuação em sistemas que resolvem problemas reais de negócio — não só código que funciona, mas software que se sustenta em produção.
-
-Tenho experiência consolidada em **sistemas críticos de operação 24/7** (ambientes hospitalares e administrativos), além de **plataformas SaaS**, **dashboards de BI**, **faturamento**, **controle de permissões** e **modernização de sistemas legados**.
-
-Perfil orientado à entrega: transformo requisitos complexos em soluções **funcionais, seguras, escaláveis** e preparadas para operar sob uso contínuo — com atenção real a performance, segurança e organização de código.
-
-<br/>
-
-## 🛠️ Stack
-
-<table width="100%">
-<tr>
-<td valign="top" width="50%">
-
-**Backend**
-<br/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="36" title="PHP"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" height="36" title="Laravel"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" height="36" title="CodeIgniter"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="36" title="Python"/>
-
-**Frontend**
-<br/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="36" title="JavaScript"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="36" title="Vue.js"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="36" title="React"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="36" title="HTML5"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="36" title="CSS3"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="36" title="Bootstrap"/>
-
-</td>
-<td valign="top" width="50%">
-
-**Dados & Infra**
-<br/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="36" title="MySQL"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="36" title="PostgreSQL"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="36" title="Git"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="36" title="GitLab"/>
-
-**E-commerce & CMS**
-<br/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" height="36" title="WordPress"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" height="36" title="WooCommerce"/>
-
-**Business Intelligence**
-<br/>
-<img src="https://img.shields.io/badge/BI-Business%20Intelligence-0e75b6?style=flat-square" />
-<img src="https://img.shields.io/badge/TARGIT-InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=flat-square" />
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-## 📦 O que eu entrego
-
-<table width="100%">
+<div align="center">
+<table>
   <tr>
-    <td align="center" width="33%">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="36" /><br/>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="40" /><br/>
       <strong>Backends robustos</strong><br/>
       <sub>PHP · Laravel · Go<br/>Estruturados, seguros e<br/>focados em regra de negócio</sub>
     </td>
-    <td align="center" width="33%">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="36" /><br/>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="40" /><br/>
       <strong>Aplicações web</strong><br/>
       <sub>JavaScript · Vue.js · React<br/>Integrações modernas com<br/>foco em usabilidade</sub>
     </td>
-    <td align="center" width="33%">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="36" /><br/>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" /><br/>
       <strong>APIs e integrações</strong><br/>
       <sub>Conexão entre sistemas<br/>Automações de fluxo e<br/>tarefas operacionais</sub>
     </td>
   </tr>
   <tr>
-    <td align="center" width="33%">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="36" /><br/>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" /><br/>
       <strong>Dashboards & relatórios</strong><br/>
       <sub>BI · Módulos administrativos<br/>Tomada de decisão<br/>baseada em dados</sub>
     </td>
-    <td align="center" width="33%">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="36" /><br/>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" /><br/>
       <strong>IA aplicada</strong><br/>
       <sub>Automação inteligente<br/>Ganho de produtividade<br/>e inteligência de processo</sub>
     </td>
-    <td align="center" width="33%">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="36" /><br/>
+    <td align="center" width="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" /><br/>
       <strong>Modernização de sistemas</strong><br/>
       <sub>Refatoração de legados<br/>Arquiteturas simples,<br/>práticas e sustentáveis</sub>
     </td>
   </tr>
 </table>
+</div>
 
-<br/>
+Foco profissional
 
-## 🎯 Foco profissional
+✦ Desenvolvimento Full Stack com maior atuação em back-end
+✦ Sistemas críticos, hospitalares e administrativos
+✦ APIs, integrações e automação de processos
+✦ Sustentação e modernização de sistemas legados
+✦ Bancos de dados, performance e regras de negócio complexas
+✦ Plataformas SaaS, e-commerce e produtos digitais
 
-<p>
-<img src="https://img.shields.io/badge/-Full%20Stack%20%7C%20foco%20em%20back--end-0e75b6?style=flat-square"/>
-<img src="https://img.shields.io/badge/-Sistemas%20críticos%20%2F%20hospitalares-3fb950?style=flat-square"/>
-<img src="https://img.shields.io/badge/-APIs%20%26%20automação%20de%20processos-f0883e?style=flat-square"/>
-<br/>
-<img src="https://img.shields.io/badge/-Sustentação%20de%20legados-bc8cff?style=flat-square"/>
-<img src="https://img.shields.io/badge/-Bancos%20de%20dados%20%26%20performance-f778ba?style=flat-square"/>
-<img src="https://img.shields.io/badge/-SaaS%20%2F%20e--commerce-58a6ff?style=flat-square"/>
-</p>
-
-<br/>
-
-## 📊 GitHub Analytics
+GitHub Stats
 
 <div align="center">
 
-<img src="assets/stats/overview.svg" alt="Visão geral do perfil" width="100%">
-
-<br/><br/>
-
-<img src="assets/stats/streak.svg" alt="Sequência de commits" width="100%">
-
-<br/><br/>
-
-<table>
-<tr>
-<td width="60%" valign="top">
-<img src="assets/stats/calendar.svg" alt="Calendário de contribuições" width="100%">
-</td>
-<td width="40%" valign="top">
-<img src="assets/stats/top-langs.svg" alt="Linguagens mais usadas" width="100%">
-</td>
-</tr>
-</table>
+<!-- <img height="180em" src="https://github-readme-stats.vercel.app/api?username=veruscodes&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=veruscodes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" /> -->
 
 </div>
 
-> ⚙️ Estatísticas geradas automaticamente a cada 6h via GitHub Actions — dados reais direto da API do GitHub, sem serviço externo.
-
-<br/>
-
-## 🧠 Mentalidade de engenharia
-
-```mermaid
-flowchart LR
-    A[Business problem] --> B[Entender o requisito real]
-    B --> C[Projetar solução simples e sustentável]
-    C --> D[Build · integrate · test]
-    D --> E[Monitorar performance e confiabilidade]
-    E --> F[Melhorar continuamente]
-    F -.-> B
-```
-
-<br/>
-
-## 🤝 Aberto a oportunidades
-
-Times que precisem de alguém com **perfil de entrega, organização e visão de produto** — remoto, híbrido ou presencial.
-
-<br/>
-
-## 📬 Contato
+<div align="center">
+  <img
+    src="https://github-readme-streak-stats-eight.vercel.app/?user=veruscodes&theme=tokyonight&hide_border=true"
+    alt="GitHub Streak"
+  />
+</div>
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-codeverus%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:codeverus@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-veruscodes-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/veruscodes)
-[![Portfolio](https://img.shields.io/badge/Portfolio-ver%20site-0e75b6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://veruscodes.github.io/windsonms/)
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=veruscodes&theme=tokyo-night&hide_border=true&area=true" />
+
+</div>
+
+Aberto a oportunidades
+
+
+
+Times que precisem de alguém com perfil de entrega, organização e visão de produto.
+
+⚠️ Nota: Os arquivos HTML contidos nestes repositórios servem apenas para fins de demonstração e visualização estática do layout. Eles não representam a arquitetura, o código real ou o escopo completo do projeto final.
+
+Contato
+
+📧 Email: codeverus@gmail.com
+
+🐙 GitHub: github.com/veruscodes
+
+🌐 Portfolio: veruscodes.github.io/windsonms
 
 📍 Vitória da Conquista, BA
 
-<br/>
+<p align="center">
+  <i>Transformando necessidade real em software útil, organizado e escalável.</i>
+</p>
+por que?
 
-<i>Transformando necessidade real em software útil, organizado e escalável.</i>
-
-</div>
+```
+Invalid upstream response (402)
+https://camo.githubusercontent.com/bf66704359d92cf69fcb11837a94bd1dad79c59e9d0fcdbccc0aa56070c72f7b/68747470733a2f2f6769746875622d726561646d652d61637469766974792d67726170682e76657263656c2e6170702f67726170683f757365726e616d653d7665727573636f646573267468656d653d746f6b796f2d6e6967687426686964655f626f726465723d7472756526617265613d74727565
+```
