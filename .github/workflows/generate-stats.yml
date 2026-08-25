@@ -376,60 +376,68 @@ jobs:
 
 
           (async () => {
-            const result = await getContributions();
-            const data = result.data.user;
-            const cal = data.contributionsCollection.contributionCalendar;
-            const weeks = cal.weeks;
-
-            // Calculate streaks
-            let currentStreak = 0;
-            let longestStreak = 0;
-            let tempStreak = 0;
-            const allDays = [];
-
-            weeks.forEach(w => w.contributionDays.forEach(d => allDays.push(d)));
-
-            // Current streak (from today backwards)
-            for (let i = allDays.length - 1; i >= 0; i--) {
-              if (allDays[i].contributionCount > 0) {
-                currentStreak++;
-              } else {
-                break;
+            try {
+              const result = await getContributions();
+              if (!result || !result.data || !result.data.user) {
+                throw new Error('Response data is undefined. Result: ' + JSON.stringify(result));
               }
+              const data = result.data.user;
+              const cal = data.contributionsCollection.contributionCalendar;
+              const weeks = cal.weeks;
+
+              // Calculate streaks
+              let currentStreak = 0;
+              let longestStreak = 0;
+              let tempStreak = 0;
+              const allDays = [];
+
+              weeks.forEach(w => w.contributionDays.forEach(d => allDays.push(d)));
+
+              // Current streak (from today backwards)
+              for (let i = allDays.length - 1; i >= 0; i--) {
+                if (allDays[i].contributionCount > 0) {
+                  currentStreak++;
+                } else {
+                  break;
+                }
+              }
+
+              // Longest streak
+              allDays.forEach(d => {
+                if (d.contributionCount > 0) {
+                  tempStreak++;
+                  if (tempStreak > longestStreak) longestStreak = tempStreak;
+                } else {
+                  tempStreak = 0;
+                }
+              });
+
+              fs.mkdirSync('assets/stats', { recursive: true });
+
+              fs.writeFileSync('assets/stats/streak.svg', generateStreakSVG(
+                cal.totalContributions, currentStreak, longestStreak
+              ));
+
+              fs.writeFileSync('assets/stats/calendar.svg', generateCalendarSVG(weeks));
+
+              const activitySvg = generateActivitySVG(weeks, cal.totalContributions);
+              fs.writeFileSync('assets/stats/commit-activity.svg', activitySvg);
+              fs.writeFileSync('assets/activity.svg', activitySvg);
+
+              fs.writeFileSync('assets/stats/overview.svg', generateOverviewSVG(data));
+
+              fs.writeFileSync('assets/stats/top-langs.svg', generateReposSVG(
+                data.contributionsCollection.repositories.nodes
+              ));
+
+              console.log('Stats generated successfully!');
+              console.log(`Total contributions: ${cal.totalContributions}`);
+              console.log(`Current streak: ${currentStreak} days`);
+              console.log(`Longest streak: ${longestStreak} days`);
+            } catch (err) {
+              console.error('Warning: Failed to fetch latest stats from GitHub API.', err.message);
+              console.log('Using pre-generated local premium SVGs as fallback.');
             }
-
-            // Longest streak
-            allDays.forEach(d => {
-              if (d.contributionCount > 0) {
-                tempStreak++;
-                if (tempStreak > longestStreak) longestStreak = tempStreak;
-              } else {
-                tempStreak = 0;
-              }
-            });
-
-            fs.mkdirSync('assets/stats', { recursive: true });
-
-            fs.writeFileSync('assets/stats/streak.svg', generateStreakSVG(
-              cal.totalContributions, currentStreak, longestStreak
-            ));
-
-            fs.writeFileSync('assets/stats/calendar.svg', generateCalendarSVG(weeks));
-
-            const activitySvg = generateActivitySVG(weeks, cal.totalContributions);
-            fs.writeFileSync('assets/stats/commit-activity.svg', activitySvg);
-            fs.writeFileSync('assets/activity.svg', activitySvg);
-
-            fs.writeFileSync('assets/stats/overview.svg', generateOverviewSVG(data));
-
-            fs.writeFileSync('assets/stats/top-langs.svg', generateReposSVG(
-              data.contributionsCollection.repositories.nodes
-            ));
-
-            console.log('Stats generated successfully!');
-            console.log(`Total contributions: ${cal.totalContributions}`);
-            console.log(`Current streak: ${currentStreak} days`);
-            console.log(`Longest streak: ${longestStreak} days`);
           })();
           SCRIPT
           node generate.js
