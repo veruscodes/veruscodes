@@ -1,0 +1,126 @@
+<svg width="860" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff"/>
+      <stop offset="100%" style="stop-color:#1f6feb"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#bc8cff"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3fb950"/>
+      <stop offset="100%" style="stop-color:#238636"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f0883e"/>
+      <stop offset="100%" style="stop-color:#db6d28"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f778ba"/>
+      <stop offset="100%" style="stop-color:#db61a2"/>
+    </linearGradient>
+    <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#79c0ff"/>
+      <stop offset="100%" style="stop-color:#58a6ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="860" height="200" fill="url(#bg)" rx="12"/>
+
+  <text x="430" y="28" fill="#8b949e" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">MENTALIDADE DE ENGENHARIA</text>
+
+  <!-- Step 1 -->
+  <g filter="url(#shadow)">
+    <rect x="15" y="48" width="115" height="100" rx="10" fill="#21262d"/>
+    <rect x="15" y="48" width="115" height="4" rx="2" fill="url(#g1)"/>
+    <text x="72" y="78" fill="#58a6ff" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">🔍</text>
+    <text x="72" y="100" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">Identificar o</text>
+    <text x="72" y="114" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">problema</text>
+    <text x="72" y="138" fill="#484f58" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Business Problem</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M135 98 L150 98" stroke="#30363d" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="148,93 158,98 148,103" fill="#30363d"/>
+
+  <!-- Step 2 -->
+  <g filter="url(#shadow)">
+    <rect x="162" y="48" width="115" height="100" rx="10" fill="#21262d"/>
+    <rect x="162" y="48" width="115" height="4" rx="2" fill="url(#g2)"/>
+    <text x="219" y="78" fill="#bc8cff" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">📋</text>
+    <text x="219" y="100" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">Entender o</text>
+    <text x="219" y="114" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">requisito real</text>
+    <text x="219" y="138" fill="#484f58" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Understand</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M282 98 L297 98" stroke="#30363d" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="295,93 305,98 295,103" fill="#30363d"/>
+
+  <!-- Step 3 -->
+  <g filter="url(#shadow)">
+    <rect x="309" y="48" width="115" height="100" rx="10" fill="#21262d"/>
+    <rect x="309" y="48" width="115" height="4" rx="2" fill="url(#g3)"/>
+    <text x="366" y="78" fill="#3fb950" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">📐</text>
+    <text x="366" y="100" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">Projetar</text>
+    <text x="366" y="114" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">solução simples</text>
+    <text x="366" y="138" fill="#484f58" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Design</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M429 98 L444 98" stroke="#30363d" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="442,93 452,98 442,103" fill="#30363d"/>
+
+  <!-- Step 4 -->
+  <g filter="url(#shadow)">
+    <rect x="456" y="48" width="115" height="100" rx="10" fill="#21262d"/>
+    <rect x="456" y="48" width="115" height="4" rx="2" fill="url(#g4)"/>
+    <text x="513" y="78" fill="#f0883e" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">⚡</text>
+    <text x="513" y="100" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">Construir ·</text>
+    <text x="513" y="114" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">integrar · testar</text>
+    <text x="513" y="138" fill="#484f58" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Build · Test</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <path d="M576 98 L591 98" stroke="#30363d" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="589,93 599,98 589,103" fill="#30363d"/>
+
+  <!-- Step 5 -->
+  <g filter="url(#shadow)">
+    <rect x="603" y="48" width="115" height="100" rx="10" fill="#21262d"/>
+    <rect x="603" y="48" width="115" height="4" rx="2" fill="url(#g5)"/>
+    <text x="660" y="78" fill="#f778ba" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">📊</text>
+    <text x="660" y="100" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">Monitorar</text>
+    <text x="660" y="114" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">performance</text>
+    <text x="660" y="138" fill="#484f58" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Monitor</text>
+  </g>
+
+  <!-- Arrow 5 -->
+  <path d="M723 98 L738 98" stroke="#30363d" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="736,93 746,98 736,103" fill="#30363d"/>
+
+  <!-- Step 6 -->
+  <g filter="url(#shadow)">
+    <rect x="748" y="48" width="100" height="100" rx="10" fill="#21262d"/>
+    <rect x="748" y="48" width="100" height="4" rx="2" fill="url(#g6)"/>
+    <text x="798" y="78" fill="#79c0ff" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">🔄</text>
+    <text x="798" y="100" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">Melhorar</text>
+    <text x="798" y="114" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="bold">continuamente</text>
+    <text x="798" y="138" fill="#484f58" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Iterate</text>
+  </g>
+
+  <!-- Return arrow -->
+  <path d="M798 152 L798 170 L72 170 L72 152" stroke="#30363d" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="68,155 72,145 76,155" fill="#30363d"/>
+
+  <!-- Footer -->
+  <text x="430" y="192" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" font-style="italic">Clareza · Confiabilidade · Performance · Segurança · Manutenibilidade</text>
+</svg>

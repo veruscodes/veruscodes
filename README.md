@@ -121,21 +121,11 @@ Transformo requisitos complexos de negócio em software com arquitetura clara, f
 
 ## 🧠 Mentalidade de Engenharia
 
-```text
-Problema de negócio
-      ↓
-Entender o requisito real
-      ↓
-Projetar uma solução simples e sustentável
-      ↓
-Construir · integrar · testar
-      ↓
-Monitorar performance e confiabilidade
-      ↓
-Melhorar continuamente
-```
+<div align="center">
 
-Valorizo **clareza, confiabilidade, performance, segurança e manutenibilidade** acima de complexidade desnecessária.
+<img src="assets/engineering-mindset.svg" alt="Mentalidade de Engenharia" width="100%">
+
+</div>
 
 ---
 
