@@ -2,7 +2,7 @@
 
 <p align="center">
   Full Stack Developer — PHP · Laravel · JavaScript · React.js<br />
-  Vitória da Conquista, BA · aberto a oportunidades remotas, híbridas ou presenciais
+  Aberto a oportunidades remotas, híbridas ou presenciais
 </p>
 
 <p align="center">
@@ -116,17 +116,6 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
     </td>
   </tr>
 </table>
-</div>
-
----
-
-## Foco profissional
-
-<div align="center">
-  <a href="foco-profissional.html" target="_blank">
-    <img src="assets/foco-profissional.svg?v=4" alt="Foco Profissional - Clique para ver versão interativa com ApexTree" width="100%" />
-  </a>
-  <sub><a href="foco-profissional.html" target="_blank">Ver versão interativa (ApexTree) &rarr;</a></sub>
 </div>
 
 ---
