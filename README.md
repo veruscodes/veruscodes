@@ -153,7 +153,6 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 
 </div>
 
-> Gráfico de contribuições gerado automaticamente via GitHub Actions (self-hosted, sem depender de serviço externo).
 
 ---
 
