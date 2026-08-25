@@ -102,7 +102,7 @@ Transformo requisitos complexos de negócio em software com arquitetura clara, f
 <div align="center">
 
 <a href="https://github.com/veruscodes">
-  <img src="assets/stats/top-langs.svg" alt="Linguagens mais usadas" width="100%">
+  <img src="assets/stats/commit-activity.svg" alt="Atividade de commits" width="100%">
 </a>
 
 </div>
