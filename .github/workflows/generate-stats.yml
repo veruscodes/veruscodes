@@ -290,22 +290,26 @@ jobs:
               const y = baseline - (i * chartHeight) / gridSteps;
               const val = Math.round((i * niceMax) / gridSteps);
               gridLines += `
-                <line x1="${paddingLeft}" y1="${y.toFixed(1)}" x2="${width - paddingRight}" y2="${y.toFixed(1)}" stroke="#2E374A" stroke-dasharray="3 3"/>
-                <text x="${paddingLeft - 14}" y="${(y + 4).toFixed(1)}" fill="#6C7A9C" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" text-anchor="end">${val}</text>
+                <line x1="${paddingLeft}" y1="${y.toFixed(1)}" x2="${width - paddingRight}" y2="${y.toFixed(1)}" stroke="#21262d" stroke-dasharray="3 3"/>
+                <text x="${paddingLeft - 12}" y="${(y + 4).toFixed(1)}" fill="#484f58" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" text-anchor="end">${val}</text>
               `;
             }
 
-            let xLabels = `<line x1="${paddingLeft}" y1="${baseline}" x2="${width - paddingRight}" y2="${baseline}" stroke="#2E374A" stroke-width="1"/>`;
+            let xLabels = `<line x1="${paddingLeft}" y1="${baseline}" x2="${width - paddingRight}" y2="${baseline}" stroke="#21262d" stroke-width="1"/>`;
+            const months = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
             points.forEach((p, i) => {
               const isPeak = i === peakIndex;
-              const showLabel = i % 3 === 0 || isPeak;
+              const showLabel = i % 5 === 0 || isPeak || i === points.length - 1;
               if (showLabel) {
+                const d = new Date(p.date + 'T12:00:00');
+                const dayNum = d.getDate();
+                const monthName = months[d.getMonth()];
                 xLabels += `
-                  <line x1="${p.x.toFixed(1)}" y1="${baseline}" x2="${p.x.toFixed(1)}" y2="${baseline + 6}" stroke="#2E374A"/>
-                  <text x="${p.x.toFixed(1)}" y="${baseline + 26}" fill="${isPeak ? '#00E396' : '#8C9BAE'}" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="${isPeak ? '700' : '400'}" text-anchor="middle">${p.shortLabel}</text>
+                  <line x1="${p.x.toFixed(1)}" y1="${baseline}" x2="${p.x.toFixed(1)}" y2="${baseline + 6}" stroke="#30363d"/>
+                  <text x="${p.x.toFixed(1)}" y="${baseline + 22}" fill="${isPeak ? '#00E396' : '#8b949e'}" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="${isPeak ? '700' : '400'}" text-anchor="middle">${dayNum} ${monthName}</text>
                 `;
               } else {
-                xLabels += `<line x1="${p.x.toFixed(1)}" y1="${baseline}" x2="${p.x.toFixed(1)}" y2="${baseline + 4}" stroke="#2E374A"/>`;
+                xLabels += `<line x1="${p.x.toFixed(1)}" y1="${baseline}" x2="${p.x.toFixed(1)}" y2="${baseline + 3}" stroke="#21262d"/>`;
               }
             });
 
@@ -314,17 +318,19 @@ jobs:
               const isPeak = i === peakIndex;
               if (isPeak) {
                 markers += `
-                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="8" fill="#00E396" fill-opacity="0.25"/>
-                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="5" fill="#00E396" stroke="#0E1326" stroke-width="2"/>
+                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="8" fill="#00E396" fill-opacity="0.20"/>
+                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="5" fill="#00E396" stroke="#0d1117" stroke-width="2">
+                    <title>${p.label}: ${p.total} commits</title>
+                  </circle>
                   
                   <g transform="translate(${p.x.toFixed(1)}, ${(p.y - 32).toFixed(1)})">
                     <rect x="-46" y="-18" width="92" height="24" rx="4" fill="#1B213B" stroke="#00E396" stroke-width="1.5"/>
-                    <text x="0" y="-2" fill="#00E396" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">${p.total} commits</text>
+                    <text x="0" y="-2" fill="#00E396" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">${p.total} commits</text>
                   </g>
                 `;
               } else {
                 markers += `
-                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4.5" fill="#008FFB" stroke="#0E1326" stroke-width="2">
+                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
                     <title>${p.label}: ${p.total} commits</title>
                   </circle>
                 `;
@@ -345,38 +351,33 @@ jobs:
               </linearGradient>
 
               <linearGradient id="apexArea" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#008FFB" stop-opacity="0.25"/>
+                <stop offset="0%" stop-color="#008FFB" stop-opacity="0.20"/>
                 <stop offset="100%" stop-color="#008FFB" stop-opacity="0.0"/>
-              </linearGradient>
-
-              <linearGradient id="apexBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#2E374A"/>
-                <stop offset="100%" stop-color="#1B213B"/>
               </linearGradient>
             </defs>
 
             <rect width="${width}" height="${height}" rx="12" fill="url(#apexBg)"/>
-            <rect width="${width - 2}" height="${height - 2}" x="1" y="1" rx="11" fill="none" stroke="url(#apexBorder)" stroke-width="1"/>
+            <rect width="${width - 2}" height="${height - 2}" x="1" y="1" rx="11" fill="none" stroke="#21262d" stroke-width="1"/>
 
-            <g transform="translate(40, 42)">
-              <text x="0" y="0" fill="#F1F5F9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Commit Activity</text>
-              <text x="0" y="22" fill="#6C7A9C" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13">Daily commit activity over the last 30 days</text>
+            <g transform="translate(40, 38)">
+              <text x="0" y="0" fill="#F1F5F9" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700">Commit Activity</text>
+              <text x="0" y="20" fill="#6C7A9C" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Daily commit activity over the last 30 days</text>
             </g>
 
-            <g transform="translate(${width - 40}, 42)">
-              <g transform="translate(-240, -4)">
+            <g transform="translate(${width - 40}, 38)">
+              <g transform="translate(-260, -2)">
                 <circle cx="0" cy="0" r="4" fill="#008FFB"/>
-                <text x="12" y="4" fill="#94A3B8" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12">Total: <tspan fill="#F1F5F9" font-weight="700">${commitsTotal}</tspan></text>
+                <text x="12" y="4" fill="#94A3B8" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Total: <tspan fill="#F1F5F9" font-weight="700">${commitsTotal}</tspan></text>
               </g>
-              <g transform="translate(-130, -4)">
+              <g transform="translate(-140, -2)">
                 <circle cx="0" cy="0" r="4" fill="#00E396"/>
-                <text x="12" y="4" fill="#94A3B8" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12">Avg: <tspan fill="#F1F5F9" font-weight="700">${dailyAvg}</tspan>/day</text>
+                <text x="12" y="4" fill="#94A3B8" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Avg: <tspan fill="#F1F5F9" font-weight="700">${dailyAvg}</tspan>/day</text>
               </g>
             </g>
 
             ${gridLines}
             <path d="${areaPath}" fill="url(#apexArea)"/>
-            <path d="${linePath}" fill="none" stroke="url(#apexLine)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="${linePath}" fill="none" stroke="url(#apexLine)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             ${markers}
             ${xLabels}
           </svg>`;
