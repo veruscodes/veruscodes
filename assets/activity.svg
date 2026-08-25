@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 260" role="img" aria-label="GitHub contribution activity preview">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1">
+    <stop offset="0" stop-color="#0d1117"/>
+    <stop offset="1" stop-color="#111827"/>
+  </linearGradient>
+  <linearGradient id="line" x1="0" x2="1">
+    <stop offset="0" stop-color="#22d3ee"/>
+    <stop offset="1" stop-color="#818cf8"/>
+  </linearGradient>
+  <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#22d3ee" stop-opacity=".24"/>
+    <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="1100" height="260" rx="18" fill="url(#bg)"/>
+<g opacity=".14" stroke="#94a3b8">
+  <line x1="70" y1="55" x2="1040" y2="55"/><line x1="70" y1="105" x2="1040" y2="105"/>
+  <line x1="70" y1="155" x2="1040" y2="155"/><line x1="70" y1="205" x2="1040" y2="205"/>
+</g>
+<g fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">
+  <text x="25" y="59">80</text><text x="25" y="109">60</text>
+  <text x="25" y="159">40</text><text x="25" y="209">20</text>
+  <text x="70" y="238">Jan</text><text x="240" y="238">Mar</text>
+  <text x="410" y="238">May</text><text x="580" y="238">Jul</text>
+  <text x="750" y="238">Sep</text><text x="920" y="238">Nov</text>
+</g>
+<path d="M70 205 C120 190 125 150 170 172 S220 125 260 145 S315 95 355 128 S400 150 445 112 S500 70 540 98 S590 130 625 82 S680 110 720 72 S770 95 815 62 S865 92 910 58 S960 72 1040 38 L1040 220 L70 220 Z" fill="url(#area)"/>
+<path d="M70 205 C120 190 125 150 170 172 S220 125 260 145 S315 95 355 128 S400 150 445 112 S500 70 540 98 S590 130 625 82 S680 110 720 72 S770 95 815 62 S865 92 910 58 S960 72 1040 38" fill="none" stroke="url(#line)" stroke-width="3" filter="url(#glow)"/>
+<g fill="#22d3ee">
+  <circle cx="170" cy="172" r="4"/><circle cx="260" cy="145" r="4"/><circle cx="355" cy="128" r="4"/>
+  <circle cx="445" cy="112" r="4"/><circle cx="540" cy="98" r="4"/><circle cx="625" cy="82" r="4"/>
+  <circle cx="720" cy="72" r="4"/><circle cx="815" cy="62" r="4"/><circle cx="910" cy="58" r="4"/>
+</g>
+<text x="70" y="30" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="15" font-weight="700">Contribution activity</text>
+<text x="890" y="30" fill="#64748b" font-family="Arial, sans-serif" font-size="12">2026 · preview</text>
+</svg>
