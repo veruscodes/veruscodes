@@ -122,12 +122,9 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 
 ## Foco profissional
 
-✦ Desenvolvimento Full Stack com maior atuação em back-end
-✦ Sistemas críticos, hospitalares e administrativos
-✦ APIs, integrações e automação de processos
-✦ Sustentação e modernização de sistemas legados
-✦ Bancos de dados, performance e regras de negócio complexas
-✦ Plataformas SaaS, e-commerce e produtos digitais
+<div align="center">
+  <img src="assets/focus-tree.svg" alt="Foco Profissional ApexTree Diagram" width="100%" />
+</div>
 
 ---
 
