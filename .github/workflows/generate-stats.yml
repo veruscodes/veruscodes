@@ -334,8 +334,8 @@ jobs:
             return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" role="img" aria-label="GitHub Commit Activity Chart">
             <defs>
               <linearGradient id="apexBg" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#0E1326"/>
-                <stop offset="100%" stop-color="#141B33"/>
+                <stop offset="0%" stop-color="#0d1117"/>
+                <stop offset="100%" stop-color="#0d1117"/>
               </linearGradient>
 
               <linearGradient id="apexLine" x1="0%" y1="0%" x2="100%" y2="0%">
