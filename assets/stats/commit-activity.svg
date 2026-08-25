@@ -104,9 +104,9 @@
           <title>Jul: 15 commits</title>
         </circle>
       
-        <circle cx="757.3" cy="155.0" r="4.5" fill="#008FFB" stroke="#0E1326" stroke-width="2">
-          <title>Aug: 60 commits</title>
-        </circle>
+        <!-- Peak Highlight Pulse -->
+        <circle cx="757.3" cy="155.0" r="8" fill="#00E396" fill-opacity="0.25"/>
+        <circle cx="757.3" cy="155.0" r="5" fill="#00E396" stroke="#0E1326" stroke-width="2"/>
       
         <circle cx="855.5" cy="131.0" r="4.5" fill="#008FFB" stroke="#0E1326" stroke-width="2">
           <title>Sep: 72 commits</title>
@@ -116,15 +116,9 @@
           <title>Oct: 54 commits</title>
         </circle>
       
-        <!-- Peak Highlight Pulse -->
-        <circle cx="1051.8" cy="99.0" r="8" fill="#00E396" fill-opacity="0.25"/>
-        <circle cx="1051.8" cy="99.0" r="5" fill="#00E396" stroke="#0E1326" stroke-width="2"/>
-        
-        <!-- Apex Tooltip Badge -->
-        <g transform="translate(1051.8, 67.0)">
-          <rect x="-42" y="-18" width="84" height="24" rx="4" fill="#1B213B" stroke="#00E396" stroke-width="1.5"/>
-          <text x="0" y="-2" fill="#00E396" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">88 commits</text>
-        </g>
+        <circle cx="1051.8" cy="99.0" r="4.5" fill="#008FFB" stroke="#0E1326" stroke-width="2">
+          <title>Nov: 88 commits</title>
+        </circle>
       
         <circle cx="1150.0" cy="231.0" r="4.5" fill="#008FFB" stroke="#0E1326" stroke-width="2">
           <title>Dec: 22 commits</title>
@@ -155,7 +149,7 @@
       <text x="659.1" y="301" fill="#8C9BAE" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Jul</text>
     
       <line x1="757.3" y1="275" x2="757.3" y2="281" stroke="#2E374A"/>
-      <text x="757.3" y="301" fill="#8C9BAE" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Aug</text>
+      <text x="757.3" y="301" fill="#00E396" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Aug</text>
     
       <line x1="855.5" y1="275" x2="855.5" y2="281" stroke="#2E374A"/>
       <text x="855.5" y="301" fill="#8C9BAE" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Sep</text>
@@ -164,7 +158,7 @@
       <text x="953.6" y="301" fill="#8C9BAE" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Oct</text>
     
       <line x1="1051.8" y1="275" x2="1051.8" y2="281" stroke="#2E374A"/>
-      <text x="1051.8" y="301" fill="#00E396" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Nov</text>
+      <text x="1051.8" y="301" fill="#8C9BAE" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Nov</text>
     
       <line x1="1150.0" y1="275" x2="1150.0" y2="281" stroke="#2E374A"/>
       <text x="1150.0" y="301" fill="#8C9BAE" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Dec</text>
