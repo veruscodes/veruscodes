@@ -123,7 +123,7 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 ## Foco profissional
 
 <div align="center">
-  <img src="assets/focus-tree.svg" alt="Foco Profissional ApexTree Diagram" width="100%" />
+  <img src="assets/focus-tree.svg?v=3" alt="Foco Profissional ApexTree Diagram" width="100%" />
 </div>
 
 ---
