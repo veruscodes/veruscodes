@@ -1,38 +1,198 @@
-<svg width="502" height="240" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" role="img" aria-label="GitHub Commit Activity Chart">
   <defs>
-    <linearGradient id="cabg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#161b22"/>
-      <stop offset="100%" style="stop-color:#0d1117"/>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#090D16"/>
     </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Line Gradient -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <!-- Area Fill Gradient -->
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#818CF8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
   </defs>
-  <rect width="502" height="240" fill="url(#cabg)" rx="10"/>
-  <text x="20" y="28" fill="#8b949e" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Commit Activity</text>
-  <text x="20" y="48" fill="#58a6ff" font-family="Arial, sans-serif" font-size="22" font-weight="bold">314</text>
-  <text x="67" y="48" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">commits this year</text>
-  <text x="342" y="28" fill="#3fb950" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Avg: 18.6/week</text>
-  <rect x="40" y="173" width="28" height="2" rx="4" fill="#0e4429">
-      <title>1 commits (week 1)</title>
-    </rect><text x="54" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W1</text><rect x="76" y="159.2622950819672" width="28" height="15.737704918032788" rx="4" fill="#006d32">
-      <title>8 commits (week 2)</title>
-    </rect><text x="90" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W2</text><rect x="112" y="173" width="28" height="2" rx="4" fill="#161b22">
-      <title>0 commits (week 3)</title>
-    </rect><text x="126" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W3</text><rect x="148" y="141.55737704918033" width="28" height="33.44262295081967" rx="4" fill="#39d353">
-      <title>17 commits (week 4)</title>
-    </rect><text x="162" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W4</text><rect x="184" y="153.36065573770492" width="28" height="21.639344262295083" rx="4" fill="#26a641">
-      <title>11 commits (week 5)</title>
-    </rect><text x="198" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W5</text><rect x="220" y="173" width="28" height="2" rx="4" fill="#0e4429">
-      <title>1 commits (week 6)</title>
-    </rect><text x="234" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W6</text><rect x="256" y="163.19672131147541" width="28" height="11.803278688524589" rx="4" fill="#006d32">
-      <title>6 commits (week 7)</title>
-    </rect><text x="270" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W7</text><rect x="292" y="108.11475409836066" width="28" height="66.88524590163934" rx="4" fill="#39d353">
-      <title>34 commits (week 8)</title>
-    </rect><text x="306" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W8</text><rect x="328" y="78.60655737704919" width="28" height="96.39344262295081" rx="4" fill="#39d353">
-      <title>49 commits (week 9)</title>
-    </rect><text x="342" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W9</text><rect x="364" y="112.04918032786884" width="28" height="62.95081967213115" rx="4" fill="#39d353">
-      <title>32 commits (week 10)</title>
-    </rect><text x="378" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W10</text><rect x="400" y="55" width="28" height="120" rx="4" fill="#39d353">
-      <title>61 commits (week 11)</title>
-    </rect><text x="414" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W11</text><rect x="436" y="169.0983606557377" width="28" height="5.9016393442622945" rx="4" fill="#0e4429">
-      <title>3 commits (week 12)</title>
-    </rect><text x="450" y="191" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W12</text>
+
+  <!-- Base Card Container -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGrad)"/>
+  <rect width="1198" height="318" x="1" y="1" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+  <!-- Card Header -->
+  <g transform="translate(40, 42)">
+    <!-- Header Icon / Dot -->
+    <circle cx="0" cy="-4" r="5" fill="#38BDF8" filter="url(#glow)"/>
+    
+    <!-- Title -->
+    <text x="16" y="0" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">Commit Activity</text>
+    <text x="155" y="0" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400">· Last 12 months</text>
+  </g>
+
+  <!-- Header Stat Badges (Right Side) -->
+  <g transform="translate(1160, 42)">
+    <!-- Badge 1: Total Commits -->
+    <g transform="translate(-240, -14)">
+      <rect x="0" y="0" width="115" height="28" rx="14" fill="#1E293B" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+      <text x="57.5" y="18" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">
+        <tspan fill="#38BDF8" font-weight="700">314</tspan> commits
+      </text>
+    </g>
+
+    <!-- Badge 2: Avg / Week -->
+    <g transform="translate(-115, -14)">
+      <rect x="0" y="0" width="115" height="28" rx="14" fill="#1E293B" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+      <text x="57.5" y="18" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">
+        <tspan fill="#A78BFA" font-weight="700">6.0</tspan> / week
+      </text>
+    </g>
+  </g>
+
+  <!-- Grid Lines -->
+  
+      <line x1="60" y1="260.0" x2="1140" y2="260.0" stroke="#334155" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+      <text x="48" y="264.0" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="end">0</text>
+    
+      <line x1="60" y1="217.5" x2="1140" y2="217.5" stroke="#334155" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+      <text x="48" y="221.5" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="end">23</text>
+    
+      <line x1="60" y1="175.0" x2="1140" y2="175.0" stroke="#334155" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+      <text x="48" y="179.0" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="end">45</text>
+    
+      <line x1="60" y1="132.5" x2="1140" y2="132.5" stroke="#334155" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+      <text x="48" y="136.5" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="end">68</text>
+    
+      <line x1="60" y1="90.0" x2="1140" y2="90.0" stroke="#334155" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+      <text x="48" y="94.0" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="end">90</text>
+    
+
+  <!-- Chart Area Fill -->
+  <path d="M 60.0 237.3 C 73.1 234.3, 132.0 216.2, 158.2 214.7 C 184.4 213.2, 230.2 231.3, 256.4 226.0 C 282.5 220.7, 328.4 178.5, 354.5 175.0 C 380.7 171.5, 426.5 190.2, 452.7 199.6 C 478.9 208.9, 524.7 240.6, 550.9 244.9 C 577.1 249.2, 622.9 244.8, 649.1 231.7 C 675.3 218.6, 721.1 161.0, 747.3 146.7 C 773.5 132.3, 819.3 122.5, 845.5 124.0 C 871.6 125.5, 917.5 162.0, 943.6 158.0 C 969.8 154.0, 1015.6 85.7, 1041.8 93.8 C 1068.0 101.8, 1126.9 201.8, 1140.0 218.4 L 1140.0 260 L 60.0 260 Z" fill="url(#areaGrad)"/>
+
+  <!-- Chart Main Line (Glowing) -->
+  <path d="M 60.0 237.3 C 73.1 234.3, 132.0 216.2, 158.2 214.7 C 184.4 213.2, 230.2 231.3, 256.4 226.0 C 282.5 220.7, 328.4 178.5, 354.5 175.0 C 380.7 171.5, 426.5 190.2, 452.7 199.6 C 478.9 208.9, 524.7 240.6, 550.9 244.9 C 577.1 249.2, 622.9 244.8, 649.1 231.7 C 675.3 218.6, 721.1 161.0, 747.3 146.7 C 773.5 132.3, 819.3 122.5, 845.5 124.0 C 871.6 125.5, 917.5 162.0, 943.6 158.0 C 969.8 154.0, 1015.6 85.7, 1041.8 93.8 C 1068.0 101.8, 1126.9 201.8, 1140.0 218.4" fill="none" stroke="url(#lineGrad)" stroke-width="3.5" filter="url(#glow)"/>
+
+  <!-- Data Nodes / Points -->
+  
+        <circle cx="60.0" cy="237.3" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>Jan: 12 commits</title>
+        </circle>
+      
+        <circle cx="158.2" cy="214.7" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>Feb: 24 commits</title>
+        </circle>
+      
+        <circle cx="256.4" cy="226.0" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>Mar: 18 commits</title>
+        </circle>
+      
+        <circle cx="354.5" cy="175.0" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>Apr: 45 commits</title>
+        </circle>
+      
+        <circle cx="452.7" cy="199.6" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>May: 32 commits</title>
+        </circle>
+      
+        <circle cx="550.9" cy="244.9" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>Jun: 8 commits</title>
+        </circle>
+      
+        <circle cx="649.1" cy="231.7" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>Jul: 15 commits</title>
+        </circle>
+      
+        <circle cx="747.3" cy="146.7" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>Aug: 60 commits</title>
+        </circle>
+      
+        <circle cx="845.5" cy="124.0" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>Sep: 72 commits</title>
+        </circle>
+      
+        <circle cx="943.6" cy="158.0" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>Oct: 54 commits</title>
+        </circle>
+      
+        <!-- Outer halo for peak -->
+        <circle cx="1041.8" cy="93.8" r="9" fill="#38BDF8" fill-opacity="0.25" filter="url(#glow)"/>
+        <circle cx="1041.8" cy="93.8" r="5" fill="#38BDF8" stroke="#0F172A" stroke-width="2"/>
+        
+        <!-- Peak Tooltip Badge -->
+        <g transform="translate(1041.8, 61.8)">
+          <rect x="-45" y="-18" width="90" height="24" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2" filter="url(#dropShadow)"/>
+          <text x="0" y="-2" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle">🔥 88 commits</text>
+        </g>
+      
+        <circle cx="1140.0" cy="218.4" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+          <title>Dec: 22 commits</title>
+        </circle>
+      
+
+  <!-- X-Axis Labels -->
+  
+      <line x1="60.0" y1="260" x2="60.0" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="60.0" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Jan</text>
+    
+      <line x1="158.2" y1="260" x2="158.2" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="158.2" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Feb</text>
+    
+      <line x1="256.4" y1="260" x2="256.4" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="256.4" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Mar</text>
+    
+      <line x1="354.5" y1="260" x2="354.5" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="354.5" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Apr</text>
+    
+      <line x1="452.7" y1="260" x2="452.7" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="452.7" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">May</text>
+    
+      <line x1="550.9" y1="260" x2="550.9" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="550.9" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Jun</text>
+    
+      <line x1="649.1" y1="260" x2="649.1" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="649.1" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Jul</text>
+    
+      <line x1="747.3" y1="260" x2="747.3" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="747.3" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Aug</text>
+    
+      <line x1="845.5" y1="260" x2="845.5" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="845.5" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Sep</text>
+    
+      <line x1="943.6" y1="260" x2="943.6" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="943.6" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Oct</text>
+    
+      <line x1="1041.8" y1="260" x2="1041.8" y2="266" stroke="#38BDF8" stroke-opacity="0.8"/>
+      <text x="1041.8" y="284" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Nov</text>
+    
+      <line x1="1140.0" y1="260" x2="1140.0" y2="266" stroke="#334155" stroke-opacity="0.4"/>
+      <text x="1140.0" y="284" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Dec</text>
+    
 </svg>

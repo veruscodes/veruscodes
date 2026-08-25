@@ -56,7 +56,7 @@ jobs:
             });
           }
 
-          async function getData() {
+          async function getContributions() {
             const query = `
               {
                 user(login: "${username}") {
@@ -67,20 +67,27 @@ jobs:
                         contributionDays {
                           contributionCount
                           date
+                          color
                         }
                       }
                     }
-                  }
-                  repositories(ownerAffiliations: OWNER, first: 100, orderBy: {field: UPDATED_AT, direction: DESC}) {
-                    nodes {
-                      name
-                      primaryLanguage { name color }
-                      stargazerCount
+                    repositories(first: 100, ownerAffiliations: OWNER) {
+                      nodes {
+                        name
+                        primaryLanguage { name color }
+                        stargazerCount
+                        forkCount
+                        description
+                      }
                     }
+                    pullRequests { totalCount }
+                    issues { totalCount }
+                    followers { totalCount }
+                    following { totalCount }
                   }
-                  pullRequests { totalCount }
-                  issues { totalCount }
-                  followers { totalCount }
+                  repositoryContributions: repositories(ownerAffiliations: OWNER, first: 100) {
+                    nodes { name }
+                  }
                 }
               }
             `;
@@ -110,11 +117,11 @@ jobs:
           }
 
           function generateCalendarSVG(weeks) {
-            const cellSize = 13;
+            const cellSize = 14;
             const cellGap = 3;
             const totalWeeks = weeks.length;
-            const width = totalWeeks * (cellSize + cellGap) + 50;
-            const height = 7 * (cellSize + cellGap) + 50;
+            const width = totalWeeks * (cellSize + cellGap) + 40;
+            const height = 7 * (cellSize + cellGap) + 40;
 
             let cells = '';
             const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -122,13 +129,13 @@ jobs:
 
             weeks.forEach((week, weekIdx) => {
               week.contributionDays.forEach((day, dayIdx) => {
-                const x = weekIdx * (cellSize + cellGap) + 40;
-                const y = dayIdx * (cellSize + cellGap) + 30;
-                const date = new Date(day.date + 'T00:00:00');
+                const x = weekIdx * (cellSize + cellGap) + 30;
+                const y = dayIdx * (cellSize + cellGap) + 25;
+                const date = new Date(day.date);
                 const month = date.getMonth();
 
                 if (month !== lastMonth && dayIdx === 0) {
-                  cells += `<text x="${x}" y="15" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">${months[month]}</text>`;
+                  cells += `<text x="${x}" y="12" fill="#8b949e" font-family="Arial, sans-serif" font-size="9">${months[month]}</text>`;
                   lastMonth = month;
                 }
 
@@ -150,143 +157,297 @@ jobs:
             </svg>`;
           }
 
-          function generateCommitActivitySVG(weeks) {
-            const last12 = weeks.slice(-12);
-            const weekData = last12.map(w => {
-              return w.contributionDays.reduce((sum, d) => sum + d.contributionCount, 0);
+          function generateReposSVG(repos) {
+            const langMap = {};
+            repos.forEach(r => {
+              if (r.primaryLanguage) {
+                const lang = r.primaryLanguage.name;
+                if (!langMap[lang]) langMap[lang] = { count: 0, color: r.primaryLanguage.color };
+                langMap[lang].count++;
+              }
             });
 
-            const totalYear = weeks.reduce((sum, w) => sum + w.contributionDays.reduce((s, d) => s + d.contributionCount, 0), 0);
-            const totalLast12 = weekData.reduce((s, v) => s + v, 0);
-            const avgWeek = (totalLast12 / weekData.length).toFixed(1);
-            const maxWeek = Math.max(...weekData, 1);
-
-            const barW = 28;
-            const barGap = 8;
-            const chartH = 120;
-            const startX = 40;
-            const startY = 55;
+            const sorted = Object.entries(langMap).sort((a, b) => b[1].count - a[1].count).slice(0, 10);
+            const barWidth = 300;
+            const maxCount = sorted.length > 0 ? sorted[0][1].count : 1;
 
             let bars = '';
-            weekData.forEach((val, i) => {
-              const x = startX + i * (barW + barGap);
-              const h = Math.max((val / maxWeek) * chartH, 2);
-              const y = startY + chartH - h;
-
-              const intensity = val === 0 ? '#161b22' :
-                val <= 3 ? '#0e4429' :
-                val <= 8 ? '#006d32' :
-                val <= 15 ? '#26a641' : '#39d353';
-
-              bars += `<rect x="${x}" y="${y}" width="${barW}" height="${h}" rx="4" fill="${intensity}">
-                <title>${val} commits (week ${i + 1})</title>
-              </rect>`;
-              bars += `<text x="${x + barW / 2}" y="${startY + chartH + 16}" fill="#484f58" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">W${i + 1}</text>`;
+            sorted.forEach(([lang, data], i) => {
+              const y = i * 28 + 35;
+              const w = (data.count / maxCount) * barWidth;
+              bars += `
+                <text x="20" y="${y + 5}" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">${lang}</text>
+                <rect x="100" y="${y - 5}" width="${w}" height="16" rx="3" fill="${data.color || '#58a6ff'}"/>
+                <text x="${100 + w + 8}" y="${y + 5}" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">${data.count}</text>
+              `;
             });
 
-            const svgW = startX + weekData.length * (barW + barGap) + 30;
-
-            return `<svg width="${svgW}" height="240" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="cabg" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#161b22"/>
-                  <stop offset="100%" style="stop-color:#0d1117"/>
-                </linearGradient>
-              </defs>
-              <rect width="${svgW}" height="240" fill="url(#cabg)" rx="10"/>
-              <text x="20" y="28" fill="#8b949e" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Commit Activity</text>
-              <text x="20" y="48" fill="#58a6ff" font-family="Arial, sans-serif" font-size="22" font-weight="bold">${totalYear}</text>
-              <text x="${20 + String(totalYear).length * 13 + 8}" y="48" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">commits this year</text>
-              <text x="${svgW - 160}" y="28" fill="#3fb950" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Avg: ${avgWeek}/week</text>
+            return `<svg width="500" height="${sorted.length * 28 + 50}" xmlns="http://www.w3.org/2000/svg">
+              <rect width="500" height="${sorted.length * 28 + 50}" fill="#0d1117" rx="10"/>
+              <text x="20" y="22" fill="#8b949e" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Top Languages</text>
               ${bars}
             </svg>`;
           }
 
           function generateOverviewSVG(data) {
             const stats = [
-              { label: 'Contributions', value: data.contributionsCollection.contributionCalendar.totalContributions, color: '#58a6ff' },
-              { label: 'Public Repos', value: data.repositories.nodes.length, color: '#3fb950' },
-              { label: 'Pull Requests', value: data.pullRequests.totalCount, color: '#f0883e' },
-              { label: 'Issues', value: data.issues.totalCount, color: '#bc8cff' },
-              { label: 'Followers', value: data.followers.totalCount, color: '#f778ba' },
+              { label: 'Total Contributions', value: data.contributionsCollection.contributionCalendar.totalContributions, color: '#58a6ff' },
+              { label: 'Public Repos', value: data.repositoryContributions.nodes.length, color: '#3fb950' },
+              { label: 'Pull Requests', value: data.contributionsCollection.pullRequests.totalCount, color: '#f0883e' },
+              { label: 'Issues', value: data.contributionsCollection.issues.totalCount, color: '#bc8cff' },
+              { label: 'Followers', value: data.contributionsCollection.followers.totalCount, color: '#f778ba' },
             ];
 
             let items = '';
             stats.forEach((s, i) => {
-              const col = i % 3;
-              const row = Math.floor(i / 3);
-              const x = col * 175 + 30;
-              const y = row * 70 + 45;
+              const x = (i % 3) * 170 + 30;
+              const y = Math.floor(i / 3) * 75 + 40;
               items += `
                 <text x="${x}" y="${y}" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">${s.label}</text>
-                <text x="${x}" y="${y + 30}" fill="${s.color}" font-family="Arial, sans-serif" font-size="30" font-weight="bold">${s.value}</text>
+                <text x="${x}" y="${y + 28}" fill="${s.color}" font-family="Arial, sans-serif" font-size="28" font-weight="bold">${s.value}</text>
               `;
             });
 
-            const rows = Math.ceil(stats.length / 3);
-            return `<svg width="560" height="${rows * 70 + 55}" xmlns="http://www.w3.org/2000/svg">
+            return `<svg width="540" height="120" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="ovbg" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" style="stop-color:#161b22"/>
                   <stop offset="100%" style="stop-color:#0d1117"/>
                 </linearGradient>
               </defs>
-              <rect width="560" height="${rows * 70 + 55}" fill="url(#ovbg)" rx="10"/>
-              <text x="20" y="28" fill="#8b949e" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Profile Overview</text>
+              <rect width="540" height="120" fill="url(#ovbg)" rx="10"/>
+              <text x="20" y="24" fill="#8b949e" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Profile Overview</text>
               ${items}
             </svg>`;
           }
 
-          (async () => {
-            try {
-              const result = await getData();
-
-              if (result.errors) {
-                console.error('GraphQL errors:', result.errors);
-                process.exit(1);
-              }
-
-              const data = result.data.user;
-              const cal = data.contributionsCollection.contributionCalendar;
-              const weeks = cal.weeks;
-              const repos = data.repositories.nodes;
-
-              let currentStreak = 0;
-              let longestStreak = 0;
-              let tempStreak = 0;
-              const allDays = [];
-              weeks.forEach(w => w.contributionDays.forEach(d => allDays.push(d)));
-
-              for (let i = allDays.length - 1; i >= 0; i--) {
-                if (allDays[i].contributionCount > 0) currentStreak++;
-                else break;
-              }
-
-              allDays.forEach(d => {
-                if (d.contributionCount > 0) {
-                  tempStreak++;
-                  if (tempStreak > longestStreak) longestStreak = tempStreak;
-                } else {
-                  tempStreak = 0;
-                }
-              });
-
-              fs.mkdirSync('assets/stats', { recursive: true });
-
-              fs.writeFileSync('assets/stats/overview.svg', generateOverviewSVG(data));
-              fs.writeFileSync('assets/stats/streak.svg', generateStreakSVG(cal.totalContributions, currentStreak, longestStreak));
-              fs.writeFileSync('assets/stats/calendar.svg', generateCalendarSVG(weeks));
-              fs.writeFileSync('assets/stats/commit-activity.svg', generateCommitActivitySVG(weeks));
-
-              console.log('Stats gerados:');
-              console.log(`  Contributions: ${cal.totalContributions}`);
-              console.log(`  Current streak: ${currentStreak} days`);
-              console.log(`  Longest streak: ${longestStreak} days`);
-              console.log(`  Repos: ${repos.length}`);
-            } catch (err) {
-              console.error('Erro:', err.message);
-              process.exit(1);
+          function smoothPath(points) {
+            if (points.length < 2) return '';
+            let d = `M${points[0].x} ${points[0].y}`;
+            for (let i = 0; i < points.length - 1; i++) {
+              const p0 = points[i === 0 ? i : i - 1];
+              const p1 = points[i];
+              const p2 = points[i + 1];
+              const p3 = points[i + 2 < points.length ? i + 2 : i + 1];
+              const cp1x = p1.x + (p2.x - p0.x) / 6;
+              const cp1y = p1.y + (p2.y - p0.y) / 6;
+              const cp2x = p2.x - (p3.x - p1.x) / 6;
+              const cp2y = p2.y - (p3.y - p1.y) / 6;
+              d += ` C${cp1x.toFixed(1)} ${cp1y.toFixed(1)}, ${cp2x.toFixed(1)} ${cp2y.toFixed(1)}, ${p2.x} ${p2.y}`;
             }
+            return d;
+          }
+
+          function generateActivitySVG(weeks, totalContributions = 0) {
+            const now = new Date();
+            const buckets = [];
+            for (let i = 11; i >= 0; i--) {
+              const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+              buckets.push({ label: d.toLocaleString('en-US', { month: 'short' }), year: d.getFullYear(), month: d.getMonth(), total: 0 });
+            }
+            weeks.forEach(w => w.contributionDays.forEach(day => {
+              const date = new Date(day.date);
+              const b = buckets.find(b => b.year === date.getFullYear() && b.month === date.getMonth());
+              if (b) b.total += day.contributionCount;
+            }));
+
+            const width = 1200;
+            const height = 320;
+            const paddingLeft = 60;
+            const paddingRight = 60;
+            const paddingTop = 90;
+            const paddingBottom = 60;
+
+            const chartWidth = width - paddingLeft - paddingRight;
+            const chartHeight = height - paddingTop - paddingBottom;
+            const baseline = paddingTop + chartHeight;
+
+            const values = buckets.map(b => b.total);
+            const sumContributions = values.reduce((a, b) => a + b, 0);
+            const totalCommits = totalContributions || sumContributions || 0;
+            const maxVal = Math.max(...values, 10);
+            const niceMax = Math.ceil(maxVal / 10) * 10 || 50;
+            const weeklyAvg = (totalCommits / 52).toFixed(1);
+            const peakIndex = values.indexOf(maxVal);
+
+            const points = buckets.map((b, i) => {
+              const x = paddingLeft + (i * chartWidth) / (buckets.length - 1);
+              const y = baseline - (b.total / niceMax) * chartHeight;
+              return { x, y, label: b.label, total: b.total, year: b.year };
+            });
+
+            const linePath = smoothPath(points);
+            const areaPath = `${linePath} L ${points[points.length - 1].x.toFixed(1)} ${baseline} L ${points[0].x.toFixed(1)} ${baseline} Z`;
+
+            const gridSteps = 4;
+            let gridLines = '';
+            for (let i = 0; i <= gridSteps; i++) {
+              const y = baseline - (i * chartHeight) / gridSteps;
+              const val = Math.round((i * niceMax) / gridSteps);
+              gridLines += `
+                <line x1="${paddingLeft}" y1="${y.toFixed(1)}" x2="${width - paddingRight}" y2="${y.toFixed(1)}" stroke="#334155" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+                <text x="${paddingLeft - 12}" y="${(y + 4).toFixed(1)}" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="end">${val}</text>
+              `;
+            }
+
+            let xLabels = '';
+            points.forEach((p, i) => {
+              const isPeak = i === peakIndex;
+              xLabels += `
+                <line x1="${p.x.toFixed(1)}" y1="${baseline}" x2="${p.x.toFixed(1)}" y2="${baseline + 6}" stroke="${isPeak ? '#38BDF8' : '#334155'}" stroke-opacity="${isPeak ? '0.8' : '0.4'}"/>
+                <text x="${p.x.toFixed(1)}" y="${baseline + 24}" fill="${isPeak ? '#38BDF8' : '#94A3B8'}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="${isPeak ? '700' : '500'}" text-anchor="middle">${p.label}</text>
+              `;
+            });
+
+            let dots = '';
+            points.forEach((p, i) => {
+              const isPeak = i === peakIndex;
+              if (isPeak) {
+                dots += `
+                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="9" fill="#38BDF8" fill-opacity="0.25" filter="url(#glow)"/>
+                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="5" fill="#38BDF8" stroke="#0F172A" stroke-width="2"/>
+                  
+                  <g transform="translate(${p.x.toFixed(1)}, ${(p.y - 32).toFixed(1)})">
+                    <rect x="-45" y="-18" width="90" height="24" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2" filter="url(#dropShadow)"/>
+                    <text x="0" y="-2" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle">🔥 ${p.total} commits</text>
+                  </g>
+                `;
+              } else {
+                dots += `
+                  <circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4" fill="#818CF8" stroke="#0F172A" stroke-width="1.5">
+                    <title>${p.label}: ${p.total} commits</title>
+                  </circle>
+                `;
+              }
+            });
+
+            return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" role="img" aria-label="GitHub Commit Activity Chart">
+            <defs>
+              <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0B0F19"/>
+                <stop offset="50%" stop-color="#0F172A"/>
+                <stop offset="100%" stop-color="#090D16"/>
+              </linearGradient>
+
+              <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4"/>
+                <stop offset="50%" stop-color="#818CF8" stop-opacity="0.1"/>
+                <stop offset="100%" stop-color="#C084FC" stop-opacity="0.3"/>
+              </linearGradient>
+
+              <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#38BDF8"/>
+                <stop offset="50%" stop-color="#818CF8"/>
+                <stop offset="100%" stop-color="#C084FC"/>
+              </linearGradient>
+
+              <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+                <stop offset="40%" stop-color="#818CF8" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#C084FC" stop-opacity="0.0"/>
+              </linearGradient>
+
+              <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="6" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+
+              <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+              </filter>
+            </defs>
+
+            <rect width="${width}" height="${height}" rx="16" fill="url(#bgGrad)"/>
+            <rect width="${width - 2}" height="${height - 2}" x="1" y="1" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+            <g transform="translate(40, 42)">
+              <circle cx="0" cy="-4" r="5" fill="#38BDF8" filter="url(#glow)"/>
+              <text x="16" y="0" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">Commit Activity</text>
+              <text x="155" y="0" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400">· Last 12 months</text>
+            </g>
+
+            <g transform="translate(${width - 40}, 42)">
+              <g transform="translate(-240, -14)">
+                <rect x="0" y="0" width="115" height="28" rx="14" fill="#1E293B" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+                <text x="57.5" y="18" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">
+                  <tspan fill="#38BDF8" font-weight="700">${totalCommits}</tspan> commits
+                </text>
+              </g>
+
+              <g transform="translate(-115, -14)">
+                <rect x="0" y="0" width="115" height="28" rx="14" fill="#1E293B" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+                <text x="57.5" y="18" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">
+                  <tspan fill="#A78BFA" font-weight="700">${weeklyAvg}</tspan> / week
+                </text>
+              </g>
+            </g>
+
+            ${gridLines}
+            <path d="${areaPath}" fill="url(#areaGrad)"/>
+            <path d="${linePath}" fill="none" stroke="url(#lineGrad)" stroke-width="3.5" filter="url(#glow)"/>
+            ${dots}
+            ${xLabels}
+          </svg>`;
+          }
+
+          (async () => {
+            const result = await getContributions();
+            const data = result.data.user;
+            const cal = data.contributionsCollection.contributionCalendar;
+            const weeks = cal.weeks;
+
+            // Calculate streaks
+            let currentStreak = 0;
+            let longestStreak = 0;
+            let tempStreak = 0;
+            const allDays = [];
+
+            weeks.forEach(w => w.contributionDays.forEach(d => allDays.push(d)));
+
+            // Current streak (from today backwards)
+            for (let i = allDays.length - 1; i >= 0; i--) {
+              if (allDays[i].contributionCount > 0) {
+                currentStreak++;
+              } else {
+                break;
+              }
+            }
+
+            // Longest streak
+            allDays.forEach(d => {
+              if (d.contributionCount > 0) {
+                tempStreak++;
+                if (tempStreak > longestStreak) longestStreak = tempStreak;
+              } else {
+                tempStreak = 0;
+              }
+            });
+
+            fs.mkdirSync('assets/stats', { recursive: true });
+
+            fs.writeFileSync('assets/stats/streak.svg', generateStreakSVG(
+              cal.totalContributions, currentStreak, longestStreak
+            ));
+
+            fs.writeFileSync('assets/stats/calendar.svg', generateCalendarSVG(weeks));
+
+            const activitySvg = generateActivitySVG(weeks, cal.totalContributions);
+            fs.writeFileSync('assets/stats/commit-activity.svg', activitySvg);
+            fs.writeFileSync('assets/activity.svg', activitySvg);
+
+            fs.writeFileSync('assets/stats/overview.svg', generateOverviewSVG(data));
+
+            fs.writeFileSync('assets/stats/top-langs.svg', generateReposSVG(
+              data.contributionsCollection.repositories.nodes
+            ));
+
+            console.log('Stats generated successfully!');
+            console.log(`Total contributions: ${cal.totalContributions}`);
+            console.log(`Current streak: ${currentStreak} days`);
+            console.log(`Longest streak: ${longestStreak} days`);
           })();
           SCRIPT
           node generate.js
@@ -295,6 +456,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/stats/
+          git add assets/
           git diff --staged --quiet || git commit -m "chore: update GitHub stats [skip ci]"
           git push
+
