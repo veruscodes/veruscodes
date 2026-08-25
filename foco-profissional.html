@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foco Profissional - Windson Martins</title>
+  <script src="https://cdn.jsdelivr.net/npm/apextree"></script>
+  <script>window.ApexTree.setLicense('APEX-eyJleHBpcnlEYXRlIjoiMjEyNi0wNy0wNCIsImlzc3VlRGF0ZSI6IjIwMjYtMDctMjgiLCJwbGFuIjoicHJlbWl1bSIsImRvbWFpbnMiOlsiYXBleGNoYXJ0cy5jb20iLCIxMjcuMC4wLjEiLCJsb2NhbGhvc3QiXSwic2lnIjoieVBmb1VCc0Z3TU9ZdUEyaEZkR0I2Y1FtZ0JITUtXcVdJSjB2NVRESXRZbFR3eDJMUmh6R2x0RUc3VXJ4X0s3b25ZMWRZb2Z2VGItN01ydFYyNDVyOWcifQ==');</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #0f172a;
+      color: #f3f4f6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #f1f5f9;
+    }
+
+    p {
+      font-size: 14px;
+      color: #9ca3af;
+      margin-bottom: 24px;
+    }
+
+    #svg-tree {
+      width: 100%;
+      max-width: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Foco Profissional</h1>
+  <p>Áreas de atuação e especialização</p>
+  <div id="svg-tree"></div>
+
+  <script>
+    const data = {
+      id: 'root',
+      data: {
+        name: 'Foco Profissional',
+        subtitle: 'Áreas de atuação',
+      },
+      children: [
+        {
+          id: 'sistemas',
+          data: {
+            name: 'Sistemas & Arquiteturas',
+            subtitle: 'Engenharia de software',
+          },
+          children: [
+            {
+              id: 'fullstack',
+              data: {
+                name: 'Full Stack (Foco em Back-end)',
+                subtitle: 'PHP · Laravel · Go · APIs',
+              },
+            },
+            {
+              id: 'legados',
+              data: {
+                name: 'Modernização de Legados',
+                subtitle: 'Refatoração e boas práticas',
+              },
+            },
+          ],
+        },
+        {
+          id: 'integracoes',
+          data: {
+            name: 'Integrações & Dados',
+            subtitle: 'Conectividade e performance',
+          },
+          children: [
+            {
+              id: 'apis',
+              data: {
+                name: 'APIs & Automação de Processos',
+                subtitle: 'Integração entre sistemas',
+              },
+            },
+            {
+              id: 'banco',
+              data: {
+                name: 'Banco de Dados & Performance',
+                subtitle: 'MySQL · PostgreSQL · Otimização',
+              },
+            },
+          ],
+        },
+        {
+          id: 'negocio',
+          data: {
+            name: 'Soluções de Negócio',
+            subtitle: 'Produtos e plataformas',
+          },
+          children: [
+            {
+              id: 'saas',
+              data: {
+                name: 'Plataformas SaaS & E-commerce',
+                subtitle: 'Produtos digitais escaláveis',
+              },
+            },
+            {
+              id: 'hospitalar',
+              data: {
+                name: 'Sistemas Críticos (Hospitalar)',
+                subtitle: 'Operação 24/7 · Confiabilidade',
+              },
+            },
+          ],
+        },
+      ],
+    };
+
+    const container = document.getElementById('svg-tree');
+    const tree = new ApexTree(container, {
+      contentKey: 'data',
+      width: '100%',
+      viewPortWidth: 1000,
+      viewPortHeight: 500,
+      nodeWidth: 260,
+      nodeHeight: 72,
+      childrenSpacing: 60,
+      siblingSpacing: 20,
+      direction: 'top',
+      edgeStyle: 'curved',
+      enableToolbar: false,
+      theme: 'dark',
+    });
+    tree.render(data);
+  </script>
+</body>
+</html>
