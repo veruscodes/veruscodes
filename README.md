@@ -1,14 +1,14 @@
 <div align="center">
 
-# 👋 Olá, eu sou o Windson Martins
+# Windson Martins
 
-### Full Stack Developer · Foco em Back-end
+### Full Stack Developer · Back-end Focused
 
 <img src="assets/banner-top.gif" alt="Banner" width="100%">
 
 `PHP` · `Laravel` · `React` · `JavaScript` · `Python` · `SQL`
 
-Construindo software confiável para problemas reais de negócio — de sistemas críticos e APIs a SaaS, BI e automação.
+Construindo software confiável para problemas reais de negócio.
 
 <p>
   <a href="https://github.com/veruscodes"><img src="https://img.shields.io/badge/GitHub-veruscodes-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
@@ -16,33 +16,21 @@ Construindo software confiável para problemas reais de negócio — de sistemas
   <a href="https://veruscodes.github.io/windsonms/"><img src="https://img.shields.io/badge/Portfolio-Online-0d1117?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
 </p>
 
-📍 Vitória da Conquista, BA · 🇧🇷 · Aberto a oportunidades remotas, híbridas e presenciais
+Vitória da Conquista, BA · Aberto a oportunidades remotas, híbridas e presenciais
 
 </div>
 
 ---
 
-## 🧑‍💻 Sobre mim
+## Sobre mim
 
-Sou um **Desenvolvedor Full Stack** com foco mais forte em **engenharia back-end**, trabalhando em aplicações que precisam ser úteis, estáveis e sustentáveis em produção.
+Sou um **Full Stack Developer** com foco em **back-end**, trabalhando em aplicações que precisam ser úteis, estáveis e sustentáveis em produção.
 
-Minha experiência inclui **sistemas críticos 24/7**, ambientes hospitalares e administrativos, produtos SaaS, dashboards, faturamento, permissões, APIs, integrações e modernização de legado.
-
-Transformo requisitos complexos de negócio em software com arquitetura clara, fluxo de dados confiável e experiência prática ao usuário.
+Minha experiência inclui sistemas críticos 24/7, ambientes hospitalares e administrativos, produtos SaaS, dashboards, faturamento, permissões, APIs, integrações e modernização de legado.
 
 ---
 
-## ⚡ O que eu construo
-
-<div align="center">
-
-<img src="assets/what-i-build.svg" alt="O que eu construo" width="100%">
-
-</div>
-
----
-
-## 🧰 Tech Stack
+## Tech Stack
 
 <div align="center">
 
@@ -50,17 +38,42 @@ Transformo requisitos complexos de negócio em software com arquitetura clara, f
 
 </div>
 
-### Business Intelligence
+---
 
-<div align="center">
+## O que eu construo
 
-<img src="assets/business-intelligence.svg" alt="Business Intelligence" width="100%">
+<table>
+<tr>
+<td width="50%">
 
-</div>
+**Backend & APIs**
+
+- Aplicações PHP / Laravel
+- APIs REST e integrações
+- Regras de negócio e permissões
+- Automação e processos agendados
+- Modernização de legado
+
+</td>
+<td width="50%">
+
+**Produtos & Dados**
+
+- Plataformas SaaS / Multi-tenant
+- Dashboards de BI e KPIs
+- Sistemas administrativos
+- Integração de dados e ETL
+- E-commerce e produtos digitais
+
+</td>
+</tr>
+</table>
+
+**Business Intelligence:** TARGIT BI · ETL · InMemory · Scheduler · Dashboards · Análise de Dados
 
 ---
 
-## 📊 Atividade no GitHub
+## Atividade no GitHub
 
 <div align="center">
 
@@ -100,40 +113,51 @@ Transformo requisitos complexos de negócio em software com arquitetura clara, f
 
 </div>
 
-> Estatísticas geradas automaticamente via GitHub Actions. Atualizadas a cada 6 horas.
-
-## 🧠 Mentalidade de Engenharia
-
-<div align="center">
-
-<img src="assets/engineering-mindset.svg" alt="Mentalidade de Engenharia" width="100%">
-
-</div>
+> Estatísticas geradas automaticamente via GitHub Actions.
 
 ---
 
-## 🎯 Foco Profissional
+## Mentalidade de Engenharia
 
-- Desenvolvimento Full Stack com maiorOwnership em back-end
+```
+Business problem
+      ↓
+Entender o requisito real
+      ↓
+Projetar uma solução simples e sustentável
+      ↓
+Build · integrate · test
+      ↓
+Monitor performance and reliability
+      ↓
+Improve continuously
+```
+
+Clareza, confiabilidade, performance, segurança e manutenibilidade acima de complexidade desnecessária.
+
+---
+
+## Foco Profissional
+
+- Full Stack com maior ownership em back-end
 - Sistemas críticos e administrativos
 - APIs, integrações e automação
 - Arquitetura SaaS e multi-tenancy
 - Design e performance de banco de dados
 - BI, dashboards e inteligência operacional
 - Modernização de aplicações legadas
-- Aplicação prática de IA e automação
 
 ---
 
-## 🌎 Aberto a oportunidades
+## Aberto a oportunidades
 
-Interessado em equipes que buscam alguém com **mentalidade de entrega, organização, visão de produto e experiência prática em engenharia**.
+Interessado em equipes que buscam alguém com mentalidade de entrega, organização, visão de produto e experiência prática em engenharia.
 
 **Remoto · Híbrido · Presencial**
 
 ---
 
-## 📫 Vamos nos conectar
+## Vamos nos conectar
 
 <div align="center">
 
