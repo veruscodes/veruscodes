@@ -1,0 +1,75 @@
+<svg width="780" height="260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <linearGradient id="hdr1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff"/>
+      <stop offset="100%" style="stop-color:#1f6feb"/>
+    </linearGradient>
+    <linearGradient id="hdr2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3fb950"/>
+      <stop offset="100%" style="stop-color:#238636"/>
+    </linearGradient>
+    <filter id="card" x="-2%" y="-2%" width="104%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="780" height="260" fill="url(#bg)" rx="12"/>
+
+  <!-- Left card: Backend & APIs -->
+  <g filter="url(#card)">
+    <rect x="15" y="15" width="370" height="230" rx="10" fill="#21262d"/>
+    <rect x="15" y="15" width="370" height="5" rx="2" fill="url(#hdr1)"/>
+
+    <text x="40" y="52" fill="#58a6ff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">⚙️ Backend &amp; APIs</text>
+
+    <!-- Items -->
+    <text x="40" y="82" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">●</text>
+    <text x="56" y="82" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Aplicações PHP / Laravel</text>
+
+    <text x="40" y="108" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">●</text>
+    <text x="56" y="108" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">APIs REST e integrações</text>
+
+    <text x="40" y="134" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">●</text>
+    <text x="56" y="134" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Regras de negócio e permissões</text>
+
+    <text x="40" y="160" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">●</text>
+    <text x="56" y="160" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Automação e processos agendados</text>
+
+    <text x="40" y="186" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">●</text>
+    <text x="56" y="186" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Modernização de legado</text>
+
+    <!-- Bottom accent -->
+    <rect x="40" y="210" width="120" height="3" rx="1.5" fill="#58a6ff" opacity="0.3"/>
+  </g>
+
+  <!-- Right card: Produtos & Dados -->
+  <g filter="url(#card)">
+    <rect x="395" y="15" width="370" height="230" rx="10" fill="#21262d"/>
+    <rect x="395" y="15" width="370" height="5" rx="2" fill="url(#hdr2)"/>
+
+    <text x="420" y="52" fill="#3fb950" font-family="Arial, sans-serif" font-size="16" font-weight="bold">📦 Produtos &amp; Dados</text>
+
+    <!-- Items -->
+    <text x="420" y="82" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">●</text>
+    <text x="436" y="82" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Plataformas SaaS / Multi-tenant</text>
+
+    <text x="420" y="108" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">●</text>
+    <text x="436" y="108" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Dashboards de BI e KPIs</text>
+
+    <text x="420" y="134" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">●</text>
+    <text x="436" y="134" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Sistemas administrativos</text>
+
+    <text x="420" y="160" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">●</text>
+    <text x="436" y="160" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">Integração de dados e ETL</text>
+
+    <text x="420" y="186" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">●</text>
+    <text x="436" y="186" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="12">E-commerce e produtos digitais</text>
+
+    <!-- Bottom accent -->
+    <rect x="420" y="210" width="120" height="3" rx="1.5" fill="#3fb950" opacity="0.3"/>
+  </g>
+</svg>

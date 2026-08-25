@@ -34,32 +34,11 @@ Transformo requisitos complexos de negócio em software com arquitetura clara, f
 
 ## ⚡ O que eu construo
 
-<table>
-<tr>
-<td width="50%">
+<div align="center">
 
-### Backend & APIs
+<img src="assets/what-i-build.svg" alt="O que eu construo" width="100%">
 
-- Aplicações PHP / Laravel
-- APIs REST e integrações
-- Regras de negócio e permissões
-- Automação e processos agendados
-- Modernização de legado
-
-</td>
-<td width="50%">
-
-### Produtos & Dados
-
-- Plataformas SaaS / Multi-tenant
-- Dashboards de BI e KPIs
-- Sistemas administrativos
-- Integração de dados e ETL
-- E-commerce e produtos digitais
-
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
