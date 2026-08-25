@@ -52,7 +52,11 @@ Transformo requisitos complexos de negócio em software com arquitetura clara, f
 
 ### Business Intelligence
 
-`TARGIT BI` · `ETL` · `InMemory` · `Scheduler` · `Dashboards` · `Análise de Dados`
+<div align="center">
+
+<img src="assets/business-intelligence.svg" alt="Business Intelligence" width="100%">
+
+</div>
 
 ---
 
