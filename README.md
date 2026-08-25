@@ -138,7 +138,7 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 
 <div align="center">
 
-<img src="assets/stats/commit-activity.svg" alt="Gráfico de atividade de contribuições" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=veruscodes&theme=tokyo-night&hide_border=true&area=true" alt="Gráfico de atividade de contribuições" width="100%" />
 
 </div>
 
