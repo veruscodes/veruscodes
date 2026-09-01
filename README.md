@@ -35,6 +35,13 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 
 ---
 
+## Licenças e certificados
+
+<a href="https://credly.com" target="_blank">
+  <img src="assets/blob.png" width="130" alt="MongoDB Skill Badge" title="MongoDB - Building an App with Code Agents" />
+</a>
+
+
 ## Stack principal
 
 <div align="center">
