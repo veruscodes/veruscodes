@@ -38,13 +38,11 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 ## Licenças e certificados
 
 <p align="center">
-  <a href="https://credly.com" target="_blank">
-    <img src="assets/blob.png" width="130" alt="MongoDB Skill Badge - Code Agents" title="MongoDB - Building an App with Code Agents" style="margin-right: 10px;" />
-  </a>
-  <a href="https://credly.com" target="_blank">
-    <img src="q6jx4f2y5ef0-AIDataStrategywithMongoDB.png" width="130" alt="MongoDB Skill Badge - AI Data Strategy" title="MongoDB - AI Data Strategy with MongoDB" />
-  </a>
+  <a href="https://www.credly.com/badges/e8e9db53-9231-4db0-a955-176a96aefa48/public_url" target="_blank" style="text-decoration: none;"><img src="assets/blob.png" width="130" alt="MongoDB - Building an App with Code Agents" title="MongoDB - Building an App with Code Agents" /></a><img width="15" />
+  <a href="https://www.credly.com/badges/5145b787-76d9-4db8-aa8c-f183f75904ad/public_url" target="_blank" style="text-decoration: none;"><img src="q6jx4f2y5ef0-AIDataStrategywithMongoDB.png" width="130" alt="MongoDB - AI Data Strategy with MongoDB" title="MongoDB - AI Data Strategy with MongoDB" /></a><img width="15" />
+  <a href="https://www.freecodecamp.org/certification/windsonms/data-analysis-with-python-v7" target="_blank" style="text-decoration: none;"><img src="Gemini_Generated_Image_myfqwemyfqwemyfq-Photoroom.png" width="130" alt="freeCodeCamp - Data Analysis with Python" title="freeCodeCamp - Data Analysis with Python" /></a>
 </p>
+
 
 
 
