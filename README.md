@@ -40,8 +40,11 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 <p align="center">
   <a href="https://www.credly.com/badges/e8e9db53-9231-4db0-a955-176a96aefa48/public_url" target="_blank" style="text-decoration: none;"><img src="assets/blob.png" width="130" alt="MongoDB - Building an App with Code Agents" title="MongoDB - Building an App with Code Agents" /></a><img width="15" />
   <a href="https://www.credly.com/badges/5145b787-76d9-4db8-aa8c-f183f75904ad/public_url" target="_blank" style="text-decoration: none;"><img src="q6jx4f2y5ef0-AIDataStrategywithMongoDB.png" width="130" alt="MongoDB - AI Data Strategy with MongoDB" title="MongoDB - AI Data Strategy with MongoDB" /></a><img width="15" />
-  <a href="https://www.freecodecamp.org/certification/windsonms/data-analysis-with-python-v7" target="_blank" style="text-decoration: none;"><img src="Gemini_Generated_Image_myfqwemyfqwemyfq-Photoroom.png" width="130" alt="freeCodeCamp - Data Analysis with Python" title="freeCodeCamp - Data Analysis with Python" /></a>
+  <a href="https://www.freecodecamp.org/certification/windsonms/data-analysis-with-python-v7" target="_blank" style="text-decoration: none;"><img src="Gemini_Generated_Image_myfqwemyfqwemyfq-Photoroom.png" width="130" alt="freeCodeCamp - Data Analysis with Python" title="freeCodeCamp - Data Analysis with Python" /></a><img width="15" />
+  <a href="[https://microsoft.com](https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/)" target="_blank" style="text-decoration: none;"><img src="assets/foundation%20of%20agentic.png" width="130" alt="Microsoft Learn - Foundations of Agentic AI" title="Microsoft Learn - Foundations of Agentic AI in GitHub" /></a><img width="15" />
+  <a href="[https://microsoft.com](https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/)" target="_blank" style="text-decoration: none;"><img src="assets/designing%20agent.png" width="130" alt="Microsoft Learn - Designing Agent Architecture" title="Microsoft Learn - Designing Agent Architecture and SDLC Integration" /></a>
 </p>
+
 
 
 
