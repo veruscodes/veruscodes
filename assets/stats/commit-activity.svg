@@ -28,11 +28,11 @@
   <g transform="translate(1160, 38)">
     <g transform="translate(-260, -2)">
       <circle cx="0" cy="0" r="4" fill="#008FFB"/>
-      <text x="12" y="4" fill="#94A3B8" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Total: <tspan fill="#F1F5F9" font-weight="700">411</tspan></text>
+      <text x="12" y="4" fill="#94A3B8" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Total: <tspan fill="#F1F5F9" font-weight="700">417</tspan></text>
     </g>
     <g transform="translate(-140, -2)">
       <circle cx="0" cy="0" r="4" fill="#00E396"/>
-      <text x="12" y="4" fill="#94A3B8" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Avg: <tspan fill="#F1F5F9" font-weight="700">8.1</tspan>/day</text>
+      <text x="12" y="4" fill="#94A3B8" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Avg: <tspan fill="#F1F5F9" font-weight="700">8.3</tspan>/day</text>
     </g>
   </g>
 
@@ -52,158 +52,158 @@
       <line x1="70" y1="95.0" x2="1150" y2="95.0" stroke="#21262d" stroke-dasharray="3 3"/>
       <text x="58" y="99.0" fill="#484f58" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" text-anchor="end">45</text>
     
-  <path d="M70 275 C76.2 272.3, 94.8 259.7, 107.24137931034483 259 C119.7 258.3, 132.1 280.3, 144.48275862068965 271 C156.9 261.7, 169.3 209.7, 181.72413793103448 203 C194.1 196.3, 206.6 227.7, 218.9655172413793 231 C231.4 234.3, 243.8 217.0, 256.2068965517241 223 C268.6 229.0, 281.0 258.3, 293.44827586206895 267 C305.9 275.7, 318.3 273.7, 330.6896551724138 275 C343.1 276.3, 355.5 278.3, 367.9310344827586 275 C380.3 271.7, 392.8 257.7, 405.17241379310343 255 C417.6 252.3, 430.0 266.3, 442.41379310344826 259 C454.8 251.7, 467.2 213.0, 479.6551724137931 211 C492.1 209.0, 504.5 236.3, 516.8965517241379 247 C529.3 257.7, 541.7 270.3, 554.1379310344828 275 C566.6 279.7, 579.0 279.0, 591.3793103448276 275 C603.8 271.0, 616.2 255.0, 628.6206896551724 251 C641.0 247.0, 653.4 265.7, 665.8620689655172 251 C678.3 236.3, 690.7 165.0, 703.1034482758621 163 C715.5 161.0, 727.9 228.3, 740.3448275862069 239 C752.8 249.7, 765.2 221.0, 777.5862068965517 227 C790.0 233.0, 802.4 267.0, 814.8275862068965 275 C827.2 283.0, 839.7 275.7, 852.0689655172414 275 C864.5 274.3, 876.9 298.3, 889.3103448275862 271 C901.7 243.7, 914.1 125.0, 926.551724137931 111 C939.0 97.0, 951.4 161.0, 963.7931034482758 187 C976.2 213.0, 988.6 268.3, 1001.0344827586207 267 C1013.4 265.7, 1025.9 179.7, 1038.2758620689656 179 C1050.7 178.3, 1063.1 249.7, 1075.5172413793102 263 C1087.9 276.3, 1100.3 259.0, 1112.7586206896551 259 C1125.2 259.0, 1143.8 262.3, 1150 263 L 1150.0 275 L 70.0 275 Z" fill="url(#apexArea)"/>
-  <path d="M70 275 C76.2 272.3, 94.8 259.7, 107.24137931034483 259 C119.7 258.3, 132.1 280.3, 144.48275862068965 271 C156.9 261.7, 169.3 209.7, 181.72413793103448 203 C194.1 196.3, 206.6 227.7, 218.9655172413793 231 C231.4 234.3, 243.8 217.0, 256.2068965517241 223 C268.6 229.0, 281.0 258.3, 293.44827586206895 267 C305.9 275.7, 318.3 273.7, 330.6896551724138 275 C343.1 276.3, 355.5 278.3, 367.9310344827586 275 C380.3 271.7, 392.8 257.7, 405.17241379310343 255 C417.6 252.3, 430.0 266.3, 442.41379310344826 259 C454.8 251.7, 467.2 213.0, 479.6551724137931 211 C492.1 209.0, 504.5 236.3, 516.8965517241379 247 C529.3 257.7, 541.7 270.3, 554.1379310344828 275 C566.6 279.7, 579.0 279.0, 591.3793103448276 275 C603.8 271.0, 616.2 255.0, 628.6206896551724 251 C641.0 247.0, 653.4 265.7, 665.8620689655172 251 C678.3 236.3, 690.7 165.0, 703.1034482758621 163 C715.5 161.0, 727.9 228.3, 740.3448275862069 239 C752.8 249.7, 765.2 221.0, 777.5862068965517 227 C790.0 233.0, 802.4 267.0, 814.8275862068965 275 C827.2 283.0, 839.7 275.7, 852.0689655172414 275 C864.5 274.3, 876.9 298.3, 889.3103448275862 271 C901.7 243.7, 914.1 125.0, 926.551724137931 111 C939.0 97.0, 951.4 161.0, 963.7931034482758 187 C976.2 213.0, 988.6 268.3, 1001.0344827586207 267 C1013.4 265.7, 1025.9 179.7, 1038.2758620689656 179 C1050.7 178.3, 1063.1 249.7, 1075.5172413793102 263 C1087.9 276.3, 1100.3 259.0, 1112.7586206896551 259 C1125.2 259.0, 1143.8 262.3, 1150 263" fill="none" stroke="url(#apexLine)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M70 259 C76.2 261.0, 94.8 280.3, 107.24137931034483 271 C119.7 261.7, 132.1 209.7, 144.48275862068965 203 C156.9 196.3, 169.3 227.7, 181.72413793103448 231 C194.1 234.3, 206.6 217.0, 218.9655172413793 223 C231.4 229.0, 243.8 258.3, 256.2068965517241 267 C268.6 275.7, 281.0 273.7, 293.44827586206895 275 C305.9 276.3, 318.3 278.3, 330.6896551724138 275 C343.1 271.7, 355.5 257.7, 367.9310344827586 255 C380.3 252.3, 392.8 266.3, 405.17241379310343 259 C417.6 251.7, 430.0 213.0, 442.41379310344826 211 C454.8 209.0, 467.2 236.3, 479.6551724137931 247 C492.1 257.7, 504.5 270.3, 516.8965517241379 275 C529.3 279.7, 541.7 279.0, 554.1379310344828 275 C566.6 271.0, 579.0 255.0, 591.3793103448276 251 C603.8 247.0, 616.2 265.7, 628.6206896551724 251 C641.0 236.3, 653.4 165.0, 665.8620689655172 163 C678.3 161.0, 690.7 228.3, 703.1034482758621 239 C715.5 249.7, 727.9 221.0, 740.3448275862069 227 C752.8 233.0, 765.2 267.0, 777.5862068965517 275 C790.0 283.0, 802.4 275.7, 814.8275862068965 275 C827.2 274.3, 839.7 298.3, 852.0689655172414 271 C864.5 243.7, 876.9 125.0, 889.3103448275862 111 C901.7 97.0, 914.1 161.0, 926.551724137931 187 C939.0 213.0, 951.4 268.3, 963.7931034482758 267 C976.2 265.7, 988.6 179.7, 1001.0344827586207 179 C1013.4 178.3, 1025.9 249.7, 1038.2758620689656 263 C1050.7 276.3, 1063.1 263.0, 1075.5172413793102 259 C1087.9 255.0, 1100.3 236.3, 1112.7586206896551 239 C1125.2 241.7, 1143.8 269.0, 1150 275 L 1150.0 275 L 70.0 275 Z" fill="url(#apexArea)"/>
+  <path d="M70 259 C76.2 261.0, 94.8 280.3, 107.24137931034483 271 C119.7 261.7, 132.1 209.7, 144.48275862068965 203 C156.9 196.3, 169.3 227.7, 181.72413793103448 231 C194.1 234.3, 206.6 217.0, 218.9655172413793 223 C231.4 229.0, 243.8 258.3, 256.2068965517241 267 C268.6 275.7, 281.0 273.7, 293.44827586206895 275 C305.9 276.3, 318.3 278.3, 330.6896551724138 275 C343.1 271.7, 355.5 257.7, 367.9310344827586 255 C380.3 252.3, 392.8 266.3, 405.17241379310343 259 C417.6 251.7, 430.0 213.0, 442.41379310344826 211 C454.8 209.0, 467.2 236.3, 479.6551724137931 247 C492.1 257.7, 504.5 270.3, 516.8965517241379 275 C529.3 279.7, 541.7 279.0, 554.1379310344828 275 C566.6 271.0, 579.0 255.0, 591.3793103448276 251 C603.8 247.0, 616.2 265.7, 628.6206896551724 251 C641.0 236.3, 653.4 165.0, 665.8620689655172 163 C678.3 161.0, 690.7 228.3, 703.1034482758621 239 C715.5 249.7, 727.9 221.0, 740.3448275862069 227 C752.8 233.0, 765.2 267.0, 777.5862068965517 275 C790.0 283.0, 802.4 275.7, 814.8275862068965 275 C827.2 274.3, 839.7 298.3, 852.0689655172414 271 C864.5 243.7, 876.9 125.0, 889.3103448275862 111 C901.7 97.0, 914.1 161.0, 926.551724137931 187 C939.0 213.0, 951.4 268.3, 963.7931034482758 267 C976.2 265.7, 988.6 179.7, 1001.0344827586207 179 C1013.4 178.3, 1025.9 249.7, 1038.2758620689656 263 C1050.7 276.3, 1063.1 263.0, 1075.5172413793102 259 C1087.9 255.0, 1100.3 236.3, 1112.7586206896551 239 C1125.2 241.7, 1143.8 269.0, 1150 275" fill="none" stroke="url(#apexLine)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   
-        <circle cx="70.0" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
-          <title>Aug 2: 0 commits</title>
-        </circle>
-      
-        <circle cx="107.2" cy="259.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="70.0" cy="259.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 3: 4 commits</title>
         </circle>
       
-        <circle cx="144.5" cy="271.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="107.2" cy="271.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 4: 1 commits</title>
         </circle>
       
-        <circle cx="181.7" cy="203.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="144.5" cy="203.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 5: 18 commits</title>
         </circle>
       
-        <circle cx="219.0" cy="231.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="181.7" cy="231.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 6: 11 commits</title>
         </circle>
       
-        <circle cx="256.2" cy="223.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="219.0" cy="223.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 7: 13 commits</title>
         </circle>
       
-        <circle cx="293.4" cy="267.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="256.2" cy="267.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 8: 2 commits</title>
         </circle>
       
-        <circle cx="330.7" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="293.4" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 9: 0 commits</title>
         </circle>
       
-        <circle cx="367.9" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="330.7" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 10: 0 commits</title>
         </circle>
       
-        <circle cx="405.2" cy="255.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="367.9" cy="255.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 11: 5 commits</title>
         </circle>
       
-        <circle cx="442.4" cy="259.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="405.2" cy="259.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 12: 4 commits</title>
         </circle>
       
-        <circle cx="479.7" cy="211.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="442.4" cy="211.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 13: 16 commits</title>
         </circle>
       
-        <circle cx="516.9" cy="247.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="479.7" cy="247.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 14: 7 commits</title>
         </circle>
       
-        <circle cx="554.1" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="516.9" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 15: 0 commits</title>
         </circle>
       
-        <circle cx="591.4" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="554.1" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 16: 0 commits</title>
         </circle>
       
-        <circle cx="628.6" cy="251.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="591.4" cy="251.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 17: 6 commits</title>
         </circle>
       
-        <circle cx="665.9" cy="251.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="628.6" cy="251.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 18: 6 commits</title>
         </circle>
       
-        <circle cx="703.1" cy="163.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="665.9" cy="163.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 19: 28 commits</title>
         </circle>
       
-        <circle cx="740.3" cy="239.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="703.1" cy="239.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 20: 9 commits</title>
         </circle>
       
-        <circle cx="777.6" cy="227.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="740.3" cy="227.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 21: 12 commits</title>
         </circle>
       
-        <circle cx="814.8" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="777.6" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 22: 0 commits</title>
         </circle>
       
-        <circle cx="852.1" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="814.8" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 23: 0 commits</title>
         </circle>
       
-        <circle cx="889.3" cy="271.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="852.1" cy="271.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 24: 1 commits</title>
         </circle>
       
-        <circle cx="926.6" cy="111.0" r="8" fill="#00E396" fill-opacity="0.20"/>
-        <circle cx="926.6" cy="111.0" r="5" fill="#00E396" stroke="#0d1117" stroke-width="2">
+        <circle cx="889.3" cy="111.0" r="8" fill="#00E396" fill-opacity="0.20"/>
+        <circle cx="889.3" cy="111.0" r="5" fill="#00E396" stroke="#0d1117" stroke-width="2">
           <title>Aug 25: 41 commits</title>
         </circle>
         
-        <g transform="translate(926.6, 79.0)">
+        <g transform="translate(889.3, 79.0)">
           <rect x="-46" y="-18" width="92" height="24" rx="4" fill="#1B213B" stroke="#00E396" stroke-width="1.5"/>
           <text x="0" y="-2" fill="#00E396" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">41 commits</text>
         </g>
       
-        <circle cx="963.8" cy="187.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="926.6" cy="187.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 26: 22 commits</title>
         </circle>
       
-        <circle cx="1001.0" cy="267.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="963.8" cy="267.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 27: 2 commits</title>
         </circle>
       
-        <circle cx="1038.3" cy="179.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="1001.0" cy="179.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 28: 24 commits</title>
         </circle>
       
-        <circle cx="1075.5" cy="263.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="1038.3" cy="263.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 29: 3 commits</title>
         </circle>
       
-        <circle cx="1112.8" cy="259.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+        <circle cx="1075.5" cy="259.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
           <title>Aug 30: 4 commits</title>
         </circle>
       
-        <circle cx="1150.0" cy="263.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
-          <title>Aug 31: 3 commits</title>
+        <circle cx="1112.8" cy="239.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+          <title>Aug 31: 9 commits</title>
+        </circle>
+      
+        <circle cx="1150.0" cy="275.0" r="4.5" fill="#008FFB" stroke="#0d1117" stroke-width="2">
+          <title>Sep 1: 0 commits</title>
         </circle>
       
   <line x1="70" y1="275" x2="1150" y2="275" stroke="#21262d" stroke-width="1"/>
         <line x1="70.0" y1="275" x2="70.0" y2="281" stroke="#30363d"/>
-        <text x="70.0" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">2 Ago</text>
+        <text x="70.0" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">3 Ago</text>
       <line x1="107.2" y1="275" x2="107.2" y2="278" stroke="#21262d"/><line x1="144.5" y1="275" x2="144.5" y2="278" stroke="#21262d"/><line x1="181.7" y1="275" x2="181.7" y2="278" stroke="#21262d"/><line x1="219.0" y1="275" x2="219.0" y2="278" stroke="#21262d"/>
         <line x1="256.2" y1="275" x2="256.2" y2="281" stroke="#30363d"/>
-        <text x="256.2" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">7 Ago</text>
+        <text x="256.2" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">8 Ago</text>
       <line x1="293.4" y1="275" x2="293.4" y2="278" stroke="#21262d"/><line x1="330.7" y1="275" x2="330.7" y2="278" stroke="#21262d"/><line x1="367.9" y1="275" x2="367.9" y2="278" stroke="#21262d"/><line x1="405.2" y1="275" x2="405.2" y2="278" stroke="#21262d"/>
         <line x1="442.4" y1="275" x2="442.4" y2="281" stroke="#30363d"/>
-        <text x="442.4" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">12 Ago</text>
+        <text x="442.4" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">13 Ago</text>
       <line x1="479.7" y1="275" x2="479.7" y2="278" stroke="#21262d"/><line x1="516.9" y1="275" x2="516.9" y2="278" stroke="#21262d"/><line x1="554.1" y1="275" x2="554.1" y2="278" stroke="#21262d"/><line x1="591.4" y1="275" x2="591.4" y2="278" stroke="#21262d"/>
         <line x1="628.6" y1="275" x2="628.6" y2="281" stroke="#30363d"/>
-        <text x="628.6" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">17 Ago</text>
+        <text x="628.6" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">18 Ago</text>
       <line x1="665.9" y1="275" x2="665.9" y2="278" stroke="#21262d"/><line x1="703.1" y1="275" x2="703.1" y2="278" stroke="#21262d"/><line x1="740.3" y1="275" x2="740.3" y2="278" stroke="#21262d"/><line x1="777.6" y1="275" x2="777.6" y2="278" stroke="#21262d"/>
         <line x1="814.8" y1="275" x2="814.8" y2="281" stroke="#30363d"/>
-        <text x="814.8" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">22 Ago</text>
-      <line x1="852.1" y1="275" x2="852.1" y2="278" stroke="#21262d"/><line x1="889.3" y1="275" x2="889.3" y2="278" stroke="#21262d"/>
-        <line x1="926.6" y1="275" x2="926.6" y2="281" stroke="#30363d"/>
-        <text x="926.6" y="297" fill="#00E396" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">25 Ago</text>
-      <line x1="963.8" y1="275" x2="963.8" y2="278" stroke="#21262d"/>
+        <text x="814.8" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">23 Ago</text>
+      <line x1="852.1" y1="275" x2="852.1" y2="278" stroke="#21262d"/>
+        <line x1="889.3" y1="275" x2="889.3" y2="281" stroke="#30363d"/>
+        <text x="889.3" y="297" fill="#00E396" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">25 Ago</text>
+      <line x1="926.6" y1="275" x2="926.6" y2="278" stroke="#21262d"/><line x1="963.8" y1="275" x2="963.8" y2="278" stroke="#21262d"/>
         <line x1="1001.0" y1="275" x2="1001.0" y2="281" stroke="#30363d"/>
-        <text x="1001.0" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">27 Ago</text>
+        <text x="1001.0" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">28 Ago</text>
       <line x1="1038.3" y1="275" x2="1038.3" y2="278" stroke="#21262d"/><line x1="1075.5" y1="275" x2="1075.5" y2="278" stroke="#21262d"/><line x1="1112.8" y1="275" x2="1112.8" y2="278" stroke="#21262d"/>
         <line x1="1150.0" y1="275" x2="1150.0" y2="281" stroke="#30363d"/>
-        <text x="1150.0" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">31 Ago</text>
+        <text x="1150.0" y="297" fill="#8b949e" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">1 Set</text>
       
 </svg>
