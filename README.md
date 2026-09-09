@@ -34,15 +34,47 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 
 ---
 
-## Skills e certificados
+<h2>Skills e certificados</h2>
 
 <p align="center">
-  <a href="https://www.credly.com/badges/e8e9db53-9231-4db0-a955-176a96aefa48/public_url" target="_blank" style="text-decoration: none;"><img src="assets/blob.png" width="125" alt="MongoDB - Building an App with Code Agents" title="MongoDB - Building an App with Code Agents" /></a><img width="10" />
-  <a href="https://www.credly.com/badges/5145b787-76d9-4db8-aa8c-f183f75904ad/public_url" target="_blank" style="text-decoration: none;"><img src="q6jx4f2y5ef0-AIDataStrategywithMongoDB.png" width="125" alt="MongoDB - AI Data Strategy with MongoDB" title="MongoDB - AI Data Strategy with MongoDB" /></a><img width="10" />
-  <a href="https://www.freecodecamp.org/certification/windsonms/data-analysis-with-python-v7" target="_blank" style="text-decoration: none;"><img src="Gemini_Generated_Image_myfqwemyfqwemyfq-Photoroom.png" width="125" alt="freeCodeCamp - Data Analysis with Python" title="freeCodeCamp - Data Analysis with Python" /></a><img width="10" />
-  <a href="https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/" target="_blank" style="text-decoration: none;"><img src="assets/foundation%20of%20agentic.png" width="125" alt="Microsoft Learn - Foundations of Agentic AI" title="Microsoft Learn - Foundations of Agentic AI in GitHub" /></a><img width="10" />
-  <a href="https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/" target="_blank" style="text-decoration: none;"><img src="assets/designing%20agent.png" width="125" alt="Microsoft Learn - Designing Agent Architecture" title="Microsoft Learn - Designing Agent Architecture and SDLC Integration" /></a><img width="10" />
-  <a href="https://mycourse.app/Z18ZKLbcqTqV2hoa9" target="_blank" style="text-decoration: none;"><img src="assets/dsa-data-science.png" width="125" alt="DSA - Fundamentos de Data Science e IA" title="Data Science Academy - Fundamentos de Data Science e IA" /></a>
+  <a href="https://www.credly.com/badges/e8e9db53-9231-4db0-a955-176a96aefa48/public_url">
+    <img src="assets/blob.png" width="125" alt="MongoDB - Building an App with Code Agents" />
+  </a>
+  &nbsp;&nbsp;
+
+  <a href="https://www.credly.com/badges/5145b787-76d9-4db8-aa8c-f183f75904ad/public_url">
+    <img src="q6jx4f2y5ef0-AIDataStrategywithMongoDB.png" width="125" alt="MongoDB - AI Data Strategy with MongoDB" />
+  </a>
+  &nbsp;&nbsp;
+
+  <a href="https://www.freecodecamp.org/certification/windsonms/data-analysis-with-python-v7">
+    <img src="Gemini_Generated_Image_myfqwemyfqwemyfq-Photoroom.png" width="125" alt="freeCodeCamp - Data Analysis with Python" />
+  </a>
+  &nbsp;&nbsp;
+
+  <a href="https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/">
+    <img src="assets/foundation%20of%20agentic.png" width="125" alt="Microsoft Learn - Foundations of Agentic AI" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/">
+    <img src="assets/designing%20agent.png" width="125" alt="Microsoft Learn - Designing Agent Architecture" />
+  </a>
+  &nbsp;&nbsp;
+
+  <a href="https://mycourse.app/Z18ZKLbcqTqV2hoa9">
+    <img src="assets/dsa-data-science.png" width="125" alt="DSA - Fundamentos de Data Science e IA" />
+  </a>
+  &nbsp;&nbsp;
+
+  <a href="https://mycourse.app/A2H141CXjY0tili9s">
+    <img
+      src="https://raw.githubusercontent.com/veruscodes/veruscodes/d82b5f2096f23acf4b4d01ec8dca6922c3094e1a/assets/Fundamentos-de-eng-dados.png"
+      width="125"
+      alt="DSA - Fundamentos de Engenharia de Dados"
+    />
+  </a>
 </p>
 
 
