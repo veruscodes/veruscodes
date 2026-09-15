@@ -6,16 +6,16 @@
       <rect x="100" y="30" width="300" height="16" rx="3" fill="#4F5D95"/>
       <text x="408" y="40" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">2</text>
     
-      <text x="20" y="68" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">CSS</text>
-      <rect x="100" y="58" width="300" height="16" rx="3" fill="#663399"/>
+      <text x="20" y="68" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">HTML</text>
+      <rect x="100" y="58" width="300" height="16" rx="3" fill="#e34c26"/>
       <text x="408" y="68" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">2</text>
     
-      <text x="20" y="96" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">HTML</text>
-      <rect x="100" y="86" width="300" height="16" rx="3" fill="#e34c26"/>
-      <text x="408" y="96" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">2</text>
+      <text x="20" y="96" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">JavaScript</text>
+      <rect x="100" y="86" width="150" height="16" rx="3" fill="#f1e05a"/>
+      <text x="258" y="96" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">1</text>
     
-      <text x="20" y="124" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">JavaScript</text>
-      <rect x="100" y="114" width="150" height="16" rx="3" fill="#f1e05a"/>
+      <text x="20" y="124" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="11">CSS</text>
+      <rect x="100" y="114" width="150" height="16" rx="3" fill="#663399"/>
       <text x="258" y="124" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">1</text>
     
   </svg>
