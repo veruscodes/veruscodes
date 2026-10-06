@@ -12,7 +12,7 @@
   <a href="mailto:codeverus@gmail.com">
     <img src="https://img.shields.io/badge/Email-codeverus%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" />
   </a>
-  <a href="https://veruscodes.github.io/windsonms/" target="_blank">
+  <a href="https://windsonms.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-ver%20site-0e75b6?style=flat-square&logo=googlechrome&logoColor=white" />
   </a>
   <img src="https://komarev.com/ghpvc/?username=veruscodes&style=flat-square&color=0e75b6" />
