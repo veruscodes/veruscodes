@@ -1,7 +1,7 @@
 <h1 align="center">Windson Martins</h1>
 
 <p align="center">
-  Desenvolvedor Full Stack Pleno | PHP & Laravel | Node.js | React.js | Python & Data Analysis | Docker & DevOps<br />
+  Desenvolvedor FullStack | PHP | Laravel | Node.js | APIs REST | MySQL | SQL Server | Docker<br />
   Aberto a oportunidades remotas, híbridas ou presenciais
 </p>
 
