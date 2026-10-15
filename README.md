@@ -75,6 +75,15 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
       alt="DSA - Fundamentos de Engenharia de Dados"
     />
   </a>
+  &nbsp;&nbsp;
+
+<a href="https://www.freecodecamp.org/certification/windsonms/foundational-c-sharp-with-microsoft">
+  <img
+    src="https://raw.githubusercontent.com/veruscodes/veruscodes/213089405cf4ba696b701dc4beac195860dadbf7/assets/Certificado%20Foundational%20C%23%20com%20Microsoft.png"
+    width="125"
+    alt="freeCodeCamp - Foundational C# with Microsoft"
+  />
+</a>
 </p>
 
 
