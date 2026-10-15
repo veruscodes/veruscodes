@@ -1,7 +1,7 @@
 <h1 align="center">Windson Martins</h1>
 
 <p align="center">
-  Desenvolvedor FullStack | PHP | Laravel | Node.js | APIs REST | MySQL | SQL Server | Docker<br />
+  Full Stack Software Engineer | Node.js • React • TypeScript • C# • PHP<br />
   Aberto a oportunidades remotas, híbridas ou presenciais
 </p>
 
