@@ -214,7 +214,7 @@ Times que precisem de alguém com perfil de entrega, organização e visão de p
 
 🐙 GitHub: [github.com/veruscodes](https://github.com/veruscodes)
 
-🌐 Portfolio: [veruscodes.github.io/windsonms](https://veruscodes.github.io/windsonms/)
+🌐 Portfolio: [https://windsonms.vercel.app/](https://windsonms.vercel.app/)
 
 📍 Vitória da Conquista, BA
 
