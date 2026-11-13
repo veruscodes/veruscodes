@@ -128,7 +128,7 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
 
 <p align="center">
   <img src="https://img.shields.io/badge/BI-Business%20Intelligence-0e75b6?style=flat-square" />
-  <img src="https://img.shields.io/badge/TARGIT-InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=flat-square" />
+  <img src="https://img.shields.io/badge/InMemory%20%7C%20ETL%20%7C%20Scheduler-181717?style=flat-square" />
 </p>
 
 ---
