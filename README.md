@@ -41,17 +41,14 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
     <img src="assets/blob.png" width="125" alt="MongoDB - Building an App with Code Agents" />
   </a>
   &nbsp;&nbsp;
-
   <a href="https://www.credly.com/badges/5145b787-76d9-4db8-aa8c-f183f75904ad/public_url">
     <img src="q6jx4f2y5ef0-AIDataStrategywithMongoDB.png" width="125" alt="MongoDB - AI Data Strategy with MongoDB" />
   </a>
   &nbsp;&nbsp;
-
   <a href="https://www.freecodecamp.org/certification/windsonms/data-analysis-with-python-v7">
     <img src="Gemini_Generated_Image_myfqwemyfqwemyfq-Photoroom.png" width="125" alt="freeCodeCamp - Data Analysis with Python" />
   </a>
   &nbsp;&nbsp;
-
   <a href="https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/">
     <img src="assets/foundation%20of%20agentic.png" width="125" alt="Microsoft Learn - Foundations of Agentic AI" />
   </a>
@@ -62,33 +59,28 @@ Possuo perfil prático e orientado à entrega: transformo necessidades complexas
     <img src="assets/designing%20agent.png" width="125" alt="Microsoft Learn - Designing Agent Architecture" />
   </a>
   &nbsp;&nbsp;
-
   <a href="https://mycourse.app/Z18ZKLbcqTqV2hoa9">
     <img src="assets/dsa-data-science.png" width="125" alt="DSA - Fundamentos de Data Science e IA" />
   </a>
   &nbsp;&nbsp;
-
   <a href="https://mycourse.app/A2H141CXjY0tili9s">
-    <img
-      src="https://raw.githubusercontent.com/veruscodes/veruscodes/d82b5f2096f23acf4b4d01ec8dca6922c3094e1a/assets/Fundamentos-de-eng-dados.png"
-      width="125"
-      alt="DSA - Fundamentos de Engenharia de Dados"
-    />
+    <img src="https://raw.githubusercontent.com/veruscodes/veruscodes/d82b5f2096f23acf4b4d01ec8dca6922c3094e1a/assets/Fundamentos-de-eng-dados.png" width="125" alt="DSA - Fundamentos de Engenharia de Dados" />
   </a>
   &nbsp;&nbsp;
-
-<a href="https://www.freecodecamp.org/certification/windsonms/foundational-c-sharp-with-microsoft">
-  <img
-    src="https://raw.githubusercontent.com/veruscodes/veruscodes/213089405cf4ba696b701dc4beac195860dadbf7/assets/Certificado%20Foundational%20C%23%20com%20Microsoft.png"
-    width="125"
-    alt="freeCodeCamp - Foundational C# with Microsoft"
-  />
-</a>
+  <a href="https://www.freecodecamp.org/certification/windsonms/foundational-c-sharp-with-microsoft">
+    <img src="https://raw.githubusercontent.com/veruscodes/veruscodes/213089405cf4ba696b701dc4beac195860dadbf7/assets/Certificado%20Foundational%20C%23%20com%20Microsoft.png" width="125" alt="freeCodeCamp - Foundational C# with Microsoft" />
+  </a>
 </p>
 
-
-
-
+<p align="center">
+  <a href="https://mycourse.app/fPczYFFcVFXQqzCu0">
+    <img src="https://raw.githubusercontent.com/veruscodes/veruscodes/7b2826e9fda6d92036c206ee822a42dae87ba18f/assets/certificado-python-ia.png" width="125" alt="DSA - Fundamentos de Linguagem Python do Básico a Aplicações de IA (96 h)" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://mycourse.app/Vf5XXM1ysyPnyOBIh">
+    <img src="https://raw.githubusercontent.com/veruscodes/veruscodes/7b2826e9fda6d92036c206ee822a42dae87ba18f/assets/certificado-python-datascience-ml.png" width="125" alt="DSA - Fundamentos de Linguagem Python para Análise de Dados, Data Science e Machine Learning (64 h)" />
+  </a>
+</p>
 
 ## Stack principal
 
